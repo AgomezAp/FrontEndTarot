@@ -1,0 +1,53 @@
+
+.background {
+    background: url("/IMAGEN-ORIGEN-scaled-1.webp") no-repeat center center fixed;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    border-radius: 10px;
+    flex-direction: column;
+    background: #f8f5f5c7;
+    z-index: 1;
+    
+  }
+  .particulas{
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .c1 {
+    font-size: 50px;
+    color: rgb(252, 227, 7);
+    overflow: hidden;
+    margin-top: 160px;
+  }
+  
+  .c2 {
+    font-weight: 200;
+    font-size: 3.0em;
+    color: rgb(252, 227, 7);
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+  }
+  
+  .c2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  
