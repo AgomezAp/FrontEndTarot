@@ -11,7 +11,7 @@
       <div class="description-content">
         <div class="result-page">
         <h3>Descripción General</h3>
-        <p [ngClass]="{ blurred: !isPaid }">{{ descriptionsText }}</p> <!-- Mostrar la descripción concatenada una vez -->
+        <p [ngClass]="{ blurred: !isPaid, 'no-select': !isPaid  }">{{ descriptionsText }}</p> <!-- Mostrar la descripción concatenada una vez -->
       </div>
       </div>
       <div *ngIf="isPaid" class="result-container">

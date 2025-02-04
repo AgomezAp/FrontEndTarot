@@ -27,7 +27,9 @@ import { ParticlesComponent } from '../../shared/particles/particles.component';
 export class WelcomeComponent {
   cardData = cardData;
   constructor(private router: Router, private cardService: CardService) {}
-
+   /* Empieza las cartas teniendo en cuenta el tema seleccionado
+    * @param {string} theme - El tema seleccionado
+   */
   startTarot(theme: string): void {
     // Filtra las cartas que tienen descripciones para el tema seleccionado
     const selectedCardData = this.cardData

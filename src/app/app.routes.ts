@@ -4,12 +4,6 @@ import {
   AdditionalInfoComponent,
 } from './components/additional-info/additional-info.component';
 import {
-  AdditionalInfo1Component,
-} from './components/additional-info1/additional-info1.component';
-import {
-  AdditionalInfo2Component,
-} from './components/additional-info2/additional-info2.component';
-import {
   AgradecimientoComponent,
 } from './components/agradecimiento/agradecimiento.component';
 import { CardsComponent } from './components/cards/cards.component';
@@ -36,12 +30,6 @@ export const routes: Routes = [
     },
     {
         path:'informacion',component:AdditionalInfoComponent
-    },
-    {
-        path:'informacion1',component:AdditionalInfo1Component
-    },
-    {
-        path:'informacion2',component:AdditionalInfo2Component
     },
     {
       path: 'particulas',component:ParticlesComponent
