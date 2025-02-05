@@ -81,7 +81,7 @@ export class DescriptionComponent {
       if (!this.isPaid) {
         this.showSweetAlert();
       }
-    }, 1500);
+    }, 3000);
   }
   showSweetAlert(): void {
     Swal.fire({

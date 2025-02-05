@@ -30,19 +30,43 @@
     z-index: 1;
     overflow: hidden;
   }
-  .card-container {
-    position: center;
-    width: 80%;
-    height:1000px;
+  .cartas-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+    overflow: hidden;
+    z-index: 1;
   }
+  .card-container {
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    margin-top: 15vh;
+  }
+  
+  .card {
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card.selected {
+    transform: scale(1.2) translateY(-50px) rotateY(180deg);
+    transition: transform 1s ease-in-out;
+  }
+  
   #cardContainer.show {
     position: absolute;
     top: 50%;
     height:1000px;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
     width: 60%;
     height: auto;
@@ -61,14 +85,14 @@
   }
   @media (max-width: 768px) {
     .card {
-      width: 100px !important;    /* Reducir tamaño */
-      height: 170px !important;
-      margin: 0 -15px;           /* Evitar superposición */
+      width: 70px !important;    /* Reducir tamaño */
+      height: 120px !important;
+      margin: -20px;           /* Evitar superposición */
     }
   
     #cardContainer {
         position: relative; /* Contenedor padre para posicionamiento absoluto */
-        width: 100vw;
+        width: 110vw;
         height: 80vh;
         overflow: hidden;
         margin-right: 20px;
