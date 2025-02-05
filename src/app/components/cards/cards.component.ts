@@ -100,7 +100,7 @@ export class CardsComponent implements OnInit {
       return;
     }
   
-    const numberOfCards = 14;
+    const numberOfCards = 12;
     const startAngle = -40; // Ángulo inicial para el abanico
     const angleStep = 90 / (numberOfCards - 1);
     const isMobile = window.innerWidth <= 768;
@@ -118,11 +118,11 @@ export class CardsComponent implements OnInit {
         const card = document.createElement("div");
         card.classList.add("card");
         card.style.position = "absolute";
-        card.style.width = isMobile ? "80px" : "110px"; // Tamaño adaptable
-        card.style.height = isMobile ? "130px" : "180px"; // Tamaño adaptable
+        card.style.width = isMobile ? "120px" : "150px"; // Tamaño adaptable
+        card.style.height = isMobile ? "200px" : "200px"; // Tamaño adaptable
         card.style.border = "1px solid #ccc";
         card.style.borderRadius = "10px";
-        card.style.left = `${centerX + radius * Math.sin(radian) - (isMobile ? 40 : 125)}px`;
+        card.style.left = `${centerX + radius * Math.sin(radian) - (isMobile ? 60 : 115)}px`;
         card.style.top = `${centerY - radius * Math.cos(radian) - (isMobile ? 90 : 125)}px`;
         card.style.opacity = "0";
         card.style.zIndex = `${i}`;
