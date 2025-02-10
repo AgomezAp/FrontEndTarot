@@ -1,6 +1,6 @@
 
 .background {
-  background: url("/Fondo.jpg") no-repeat center center fixed;
+  background: url("/IMAGEN-ORIGEN-scaled-1.webp") no-repeat center center fixed;
   background-size: cover;
   background-position: center center;
   display: flex;

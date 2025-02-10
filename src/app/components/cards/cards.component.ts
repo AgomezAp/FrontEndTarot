@@ -104,8 +104,8 @@ export class CardsComponent implements OnInit {
     const startAngle = -40; // Ángulo inicial para el abanico
     const angleStep = 90 / (numberOfCards - 1);
     const isMobile = window.innerWidth <= 768;
-    const radius = isMobile ? 150 : 250; // Radio más pequeño para móviles
-    const centerX = window.innerWidth / 1.85;
+    const radius = isMobile ? 140 : 240; // Radio más pequeño para móviles
+    const centerX = window.innerWidth / 2.0;
     const centerY = window.innerHeight / (isMobile ? 2.2: 1.45) + 20;
   
     for (let i = 0; i < numberOfCards; i++) {
@@ -119,11 +119,11 @@ export class CardsComponent implements OnInit {
         card.classList.add("card");
         card.style.position = "absolute";
         card.style.width = isMobile ? "120px" : "150px"; // Tamaño adaptable
-        card.style.height = isMobile ? "180px" : "250px"; // Tamaño adaptable
+        card.style.height = isMobile ? "200px" : "250px"; // Tamaño adaptable
         card.style.border = "1px solid #ccc";
         card.style.borderRadius = "10px";
-        card.style.left = `${centerX + radius * Math.sin(radian) - (isMobile ? 40 : 125)}px`;
-        card.style.top = `${centerY - radius * Math.cos(radian) - (isMobile ? 90 : 125)}px`;
+        card.style.left = `${centerX + radius * Math.sin(radian) - (isMobile ? 40 : 95)}px`;
+        card.style.top = `${centerY - radius * Math.cos(radian) - (isMobile ? 190 : 190)}px`;
         card.style.opacity = "0";
         card.style.zIndex = `${i}`;
         card.style.transform = `rotate(${angle}deg)`;
@@ -182,14 +182,14 @@ export class CardsComponent implements OnInit {
     // Posicionamiento responsive
     const isMobile = window.innerWidth <= 768;
     const centerX = window.innerWidth / 1.6;
-    const centerY = window.innerHeight / 4.25 + (isMobile ? 20 : 15);
+    const centerY = window.innerHeight / 4.25 + (isMobile ? 125 : 150);
     const cardSpacing = isMobile ? 40 : 100; // Menor espacio entre cartas en móvil
   
     // Calcular nueva posición basada en cantidad de seleccionadas
     const offsetX = (this.selectedCards.length - 1) * cardSpacing - cardSpacing;
   
-    target.style.left = `${centerX - (isMobile ? 40 : 75) + offsetX}px`;
-    target.style.top = `${centerY - (isMobile ? 20 : 125)}px`;
+    target.style.left = `${centerX - (isMobile ? 40 : 125) + offsetX}px`;
+    target.style.top = `${centerY - (isMobile ? 40 : 125)}px`;
     target.style.transform = `scale(${isMobile ? 1.1 : 1.2}) rotateY(180deg)`;
   
     this.selectedCards.push({
@@ -221,10 +221,10 @@ export class CardsComponent implements OnInit {
     const cardWidth = isMobile ? 80 : 150;
     const spacing = isMobile ? 20 : 60;
     const totalWidth = (cardWidth * 3) + (2 * spacing);
-    const startX = isMobile ? (window.innerWidth - totalWidth) / 1.25 : (window.innerWidth - totalWidth) / 2;
+    const startX = isMobile ? (window.innerWidth - totalWidth) / 1.65 : (window.innerWidth - totalWidth) / 2;
   
     // Ajuste clave: Posición vertical para escritorio (parte inferior)
-    let centerY = isMobile ? window.innerHeight * 0.2 : window.innerHeight * 0.9 - 400;
+    let centerY = isMobile ? window.innerHeight * 0.1 : window.innerHeight * 0.9 - 600;
   
     Array.from(selectedCards).forEach((card: Element, index: number) => {
       const htmlCard = card as HTMLElement;
