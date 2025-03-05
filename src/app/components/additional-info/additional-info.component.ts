@@ -39,6 +39,7 @@ export class AdditionalInfoComponent implements OnInit  {
   nombreCliente: string = '';
   descriptionsText: string = '';  
   selectedCards: any[] = [];
+  termsAccepted: boolean = false;
   private encryptionKey = 'U0qQ0TGufDDJqCNvQS0b795q8EZPAp9E';
 
   constructor(
@@ -65,6 +66,10 @@ export class AdditionalInfoComponent implements OnInit  {
     const errorMessage = document.getElementById('errorMessage');
     const numErrorMessage = document.getElementById('numErrorMessage');
 
+    if (!this.termsAccepted) {
+      alert('Debes aceptar los términos y condiciones para continuar.');
+      return;
+    }
     if (isNaN(Number(this.phone))) {
       numErrorMessage?.classList.add('show');
       numErrorMessage?.classList.remove('none');
