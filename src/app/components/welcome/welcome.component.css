@@ -42,7 +42,7 @@ h1 {
     color: #ffffff;
     text-shadow: 1px 1px 4px rgba(255, 215, 0, 0.6);
 }
-.start-button {
+.start-button-amor, .start-button-futuro, .start-button-dinero {
     padding: 15px 30px;
     font-size: 20px;
     color: white;
