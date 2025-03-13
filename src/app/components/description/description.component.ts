@@ -13,9 +13,6 @@ import {
   Router,
 } from '@angular/router';
 
-import * as CryptoJS from 'crypto-js';
-import Swal from 'sweetalert2';
-
 import { CardService } from '../../services/card.service';
 import { ParticlesComponent } from '../../shared/particles/particles.component';
 
@@ -45,7 +42,7 @@ export class DescriptionComponent {
   constructor(private cardService: CardService, private router: Router, private route: ActivatedRoute, private http: HttpClient,) { }
 
   ngOnInit(): void {
-    this.route.queryParams.subscribe((params: any) => {
+ /*    this.route.queryParams.subscribe((params: any) => {
       if (params['collection_status'] === 'approved') {
         this.isPaid = true;
         const encryptedData = localStorage.getItem('paymentData');
@@ -62,7 +59,7 @@ export class DescriptionComponent {
           }
         }
       }
-    })
+    }) */
 
     this.selectedCards = this.cardService.getSelectedCards();
 
@@ -77,13 +74,13 @@ export class DescriptionComponent {
       .filter((description) => description)
       .map((description) => (description.endsWith(".") ? description : description + "."))
       .join("  "); // Concatenar descripciones
-    setTimeout(() => {
+  /*   setTimeout(() => {
       if (!this.isPaid) {
         this.showSweetAlert();
       }
-    }, 500);
+    }, 500); */
   }
-  showSweetAlert(): void {
+/*   showSweetAlert(): void {
     Swal.fire({
       title: 'Para ver el contenido',
       text: 'Realiza una pequeña contribución, para ver lo que las cartas y los astros tienen para ti.',
@@ -96,7 +93,7 @@ export class DescriptionComponent {
         this.makePayment();
       }
     });
-  }
+  } */
 
   showPopup(): void {
     this.router.navigate(['/informacion']);
@@ -105,7 +102,7 @@ export class DescriptionComponent {
   closePopup(): void {
     this.showPopupFlag = false;
   }
-  makePayment(): void {
+ /*  makePayment(): void {
     // Guardar los datos en el almacenamiento local
     const paymentData = {
       descriptionsText: this.selectedCards,
@@ -119,10 +116,10 @@ export class DescriptionComponent {
     localStorage.setItem('paymentData', encryptedData);
 
     this.http
-      .post<{ id: string }>('https://api.cartastarotcolombia.com/create-order', {})
+      .post<{ id: string }>('http://localhost:3010/create-order', {})
       .subscribe((response) => {
         const paymentUrl = `https://www.mercadopago.com.co/checkout/v1/redirect?preference-id=${response.id}`;
         window.location.href = paymentUrl;
       });
-  }
+  } */
 }

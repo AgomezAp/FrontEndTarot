@@ -12,18 +12,20 @@
       <div class="description-content">
         <div class="result-page">
           <h3>Descripción General</h3>
-          <div class="scrollable-description" [ngClass]="{ blurred: !isPaid, 'no-select': !isPaid  }">
+          <!-- [ngClass]="{ blurred: !isPaid, 'no-select': !isPaid  }" -->
+          <div class="scrollable-description" >
             <p>{{ descriptionsText }}</p>
           </div>
         </div>
       </div>
 
       <div class="button-container">
-        <div *ngIf="!isPaid" class="result-container">
+     <!--    <div *ngIf="!isPaid" class="result-container">
           <button class="call-to-action" (click)="makePayment()">Hacer Pago</button>
-        </div>
-        <div *ngIf="isPaid" class="result-container">
-          <button class="call-to-action" (click)="showPopup()">Hablar con el maestro</button>
+        </div> -->
+        <!-- *ngIf="isPaid" -->
+        <div  class="result-container">
+          <button class="call-to-action" (click)="showPopup()">Hablar con la maestra</button>
         </div>
       </div>
     </div>
