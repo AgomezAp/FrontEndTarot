@@ -62,7 +62,6 @@ export class DescriptionComponent {
     }) */
 
     this.selectedCards = this.cardService.getSelectedCards();
-
     this.descriptionsText = this.selectedCards
       .map((card) => {
         if (card.descriptions && card.descriptions.length > 0) {

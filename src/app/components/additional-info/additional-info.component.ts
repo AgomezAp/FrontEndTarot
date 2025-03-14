@@ -17,8 +17,6 @@ import {
   Router,
 } from '@angular/router';
 
-import * as CryptoJS from 'crypto-js';
-
 import { ParticlesComponent } from '../../shared/particles/particles.component';
 
 @Component({
@@ -41,7 +39,7 @@ export class AdditionalInfoComponent implements OnInit  {
   selectedCards: any[] = [];
   termsAccepted: boolean = false;
   private encryptionKey = 'U0qQ0TGufDDJqCNvQS0b795q8EZPAp9E';
-
+  recopila: any[] = [];
   constructor(
     private router: Router,
     private route: ActivatedRoute,
@@ -49,8 +47,8 @@ export class AdditionalInfoComponent implements OnInit  {
   ) {}
 
   ngOnInit(): void {
-    const encryptedData = localStorage.getItem('paymentData');
-    if (encryptedData) {
+    const recopilaData = localStorage.getItem('selectedCards');
+   /*  if (encryptedData) {
       try {
         const bytes = CryptoJS.AES.decrypt(encryptedData, this.encryptionKey);
         const decryptedData = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
@@ -59,7 +57,11 @@ export class AdditionalInfoComponent implements OnInit  {
       } catch (e) {
         console.error('Error al desencriptar los datos:', e);
       }
-    }
+    } */
+      if (recopilaData) {
+        this.recopila = JSON.parse(recopilaData);
+        console.log('Card Details:', this.recopila);
+      }
   }
 
   submitPhone(): void {
@@ -97,12 +99,12 @@ export class AdditionalInfoComponent implements OnInit  {
       }, 500);
 
       // Recopilar datos de las cartas seleccionadas
-      const cardDetails = this.selectedCards.map(card => ({
+      const cardDetails = this.recopila.map(card => ({
         name: card.name,
         description: card.descriptions[0] // Asumiendo que solo hay una descripción por carta
       }));
      
-      console.log('Card Details:', cardDetails);
+      console.log('Card Details:', this.recopila);
       const nombreCliente = this.nombreCliente;
       const numeroCliente = `${this.countryCode}${this.phone}`;
       const numeroMaestro = '+573143127342';
