@@ -39,6 +39,7 @@ export class AdditionalInfoComponent implements OnInit  {
   selectedCards: any[] = [];
   termsAccepted: boolean = false;
   private encryptionKey = 'U0qQ0TGufDDJqCNvQS0b795q8EZPAp9E';
+  tema = localStorage.getItem('tema');
   recopila: any[] = [];
   constructor(
     private router: Router,
@@ -48,6 +49,7 @@ export class AdditionalInfoComponent implements OnInit  {
 
   ngOnInit(): void {
     const recopilaData = localStorage.getItem('selectedCards');
+   
    /*  if (encryptedData) {
       try {
         const bytes = CryptoJS.AES.decrypt(encryptedData, this.encryptionKey);
@@ -115,7 +117,7 @@ export class AdditionalInfoComponent implements OnInit  {
         phoneNumberCliente: numeroCliente,
         phoneNumberMaestro: numeroMaestro,
         nombreDelCliente: this.nombreCliente,
-        message: `Nueva consulta de ${this.nombreCliente} (${numeroCliente}): \n\n${cardDetails.map(card => `Carta: ${card.name}, Descripción: ${card.description}`).join('\n')} \n\nPonte en contacto con el cliente:\n\nhttps://wa.me/${numeroCliente}`,
+        message: `Nueva consulta de ${this.nombreCliente} (${numeroCliente}): Tema: ${this.tema}   \n\n${cardDetails.map(card => `Carta: ${card.name}, Descripción: ${card.description}`).join('\n')} \n\nPonte en contacto con el cliente:\n\nhttps://wa.me/${numeroCliente}`,
       };
 
       const url = 'https://gestor-de-mesajeria-via-whatsapp-g5hc.onrender.com/api/messages/CrearMensaje';
