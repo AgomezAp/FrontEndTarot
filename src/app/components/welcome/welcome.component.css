@@ -15,7 +15,6 @@
   box-sizing: border-box;
   overflow-y: auto; /* Permite scroll si es necesario */
   z-index: 1;
-  position: fixed;
 }
 
 
