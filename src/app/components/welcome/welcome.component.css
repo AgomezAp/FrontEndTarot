@@ -1,4 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html, body {
+  width: 100%; /* Cambiado de 100vw para evitar problemas con la barra de desplazamiento */
+  height: 100%;
+  overflow: hidden; /* Forzar sin scroll */
+  position: fixed; /* Evita rebotes en dispositivos móviles */
+  top: 0;
+  left: 0;
+}
 .background {
   background: url("/IMAGEN-ORIGEN-scaled-1.webp") no-repeat center center fixed;
   background-size: cover;
@@ -8,10 +21,6 @@
   justify-content: center;/* Cambiado de center a flex-start */
   align-items: center;
   min-height: 100vh; /* Cambiado de height a min-height */
-  margin-top: -10px;
-  margin-left: -17px;
-  margin-right:-17px;
-  margin-bottom: 0px;
   box-sizing: border-box;
   overflow-y: auto; /* Permite scroll si es necesario */
   z-index: 1;
