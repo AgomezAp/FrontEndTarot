@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { ParticlesComponent } from '../../shared/particles/particles.component';
+import { gsap } from 'gsap';
 
 declare var anime: any; 
 
@@ -12,8 +13,13 @@ declare var anime: any;
   styleUrl: './agradecimiento.component.css'
 })
 export class AgradecimientoComponent {
-  constructor(private router:Router) {}
-  redirigir(){
-    this.router.navigate(['/welcome']);
+
+  constructor(private router: Router) {}
+  
+
+  redirigir(): void {
+    // Limpiar datos y redirigir
+    localStorage.clear();
+    this.router.navigate(['/']);
   }
 }

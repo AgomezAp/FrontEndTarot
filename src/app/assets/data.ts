@@ -9,50 +9,54 @@ export const data = {
 export const cardData = [
   {
     src: "/Carta0.webp",
-    name: "El Loco",
+    name: "El Loco", 
     descriptions: {
-      amor: [
-        "¿Sientes el impulso de aventurarte en un romance inesperado, o estás listo para dejar atrás relaciones que ya no te nutren? El Loco te invita a una profunda introspección: ¿Qué tan dispuesto estás a desafiar las convenciones y a abrazar lo desconocido en el amor? ¿Te atreves a confiar en tu intuición y a seguir el llamado de tu corazón, incluso si el camino parece incierto? ¿Qué riesgos estás dispuesto a asumir por la promesa de una conexión auténtica y apasionada?",
-        "¿Sientes el llamado de tu verdadero ser, esa chispa única que te define? El Loco te desafía a liberarte de las expectativas ajenas y a mostrar al mundo tu autenticidad sin reservas. ¿Te atreves a dejar de lado las máscaras y a expresar tus sentimientos y deseos con total transparencia? ¿Estás listo para enfrentar el juicio de los demás y a caminar tu propio camino, sin importar las opiniones? ¿Qué significa para ti ser fiel a ti mismo en el amor?",
-        "¿Te seduce la emoción de lo impredecible, la aventura de vivir el presente sin preocuparte por el futuro? El Loco te invita a sumergirte en la experiencia del ahora, a saborear cada momento con intensidad y a dejarte llevar por la corriente de la vida. ¿Estás dispuesto a soltar el control y a confiar en que el universo te guiará? ¿Qué significa para ti vivir el momento en el amor, sin ataduras ni expectativas?",
-        "¿Sientes que viejas heridas emocionales te impiden avanzar en el amor? El Loco te recuerda que la sanación está a tu alcance, que la libertad emocional es posible si te permites abrirte a nuevas oportunidades de felicidad. ¿Estás dispuesto a dejar atrás el pasado y a perdonar, tanto a los demás como a ti mismo? ¿Qué significa para ti la libertad emocional en el amor? ¿Cómo te permitirás experimentar la alegría y la plenitud en tus relaciones?"
-      ],
-      dinero: [
-        "¿Sientes el impulso de iniciar un nuevo proyecto financiero, o estás considerando un cambio radical en tu forma de administrar tus recursos? El Loco te incita a una profunda reflexión: ¿Qué tan lejos estás dispuesto a llegar para alcanzar la seguridad económica que anhelas? ¿Estás dispuesto a desafiar las normas establecidas y a explorar caminos financieros inexplorados? ¿Qué riesgos estás dispuesto a asumir por la promesa de una vida próspera y abundante?",
-        "¿Visualizas la abundancia como un estado mental, una creencia arraigada en tu interior? El Loco te reta a confiar en la providencia del universo, a creer en tus propias capacidades y a visualizar con claridad tus metas financieras. ¿Estás dispuesto a cultivar una mentalidad de abundancia y a liberarte de las creencias limitantes sobre el dinero? ¿Qué significa para ti la abundancia y cómo la manifestarás en tu vida?",
-        "¿Estás dispuesto a salir de tu zona de confort y a aventurarte en territorios financieros desconocidos en busca del éxito? El Loco te impulsa a explorar nuevas oportunidades, a aprender de tus errores y a no temer a los desafíos que puedan surgir. ¿Estás dispuesto a desarrollar nuevas habilidades y a adaptarte a los cambios del mercado? ¿Qué significa para ti el éxito financiero y cómo lo alcanzarás?",
-        "¿Permitirás que las limitaciones del pasado te definan, o las utilizarás como un trampolín hacia un futuro financiero estable y próspero? El Loco te anima a superar tus miedos, a aprender de tus experiencias pasadas y a construir una base financiera sólida que te permita alcanzar tus sueños. ¿Estás dispuesto a liberarte de las creencias limitantes sobre el dinero y a crear una nueva narrativa financiera para tu vida? ¿Qué significa para ti la estabilidad financiera y cómo la construirás?"
-      ],
-      futuro: [
-        "¿Sientes un susurro lejano, una invitación a aventurarte en lo desconocido? ¿O quizás, en el silencio de tu interior, resuenan ecos de caminos no tomados, la necesidad de explorar horizontes inexplorados? El Loco te plantea un enigma: ¿Qué abismos estás dispuesto a cruzar para forjar un futuro lleno de experiencias únicas? ¿Podrás realmente dejar atrás la seguridad de lo conocido, construir un presente y un futuro cimentado en la valentía y la exploración? ¿Qué significado profundo tiene la palabra aventura para ti, y cómo te atreverás a vivirla en el incierto mañana?",
-        "¿Te atreves a imaginar un futuro donde tus ideas cobran vida, donde cada paso te acerca a la realización de tus sueños? El Loco te lanza un desafío intrigante: ¿Podrás construir un futuro donde la creatividad, la innovación y la confianza sean los cimientos de cada proyecto? ¿Estás dispuesto a abrir tu mente a nuevas posibilidades, a encontrar soluciones creativas que te impulsen hacia el éxito? ¿Qué significado misterioso encierra para ti el crear, y cómo lo aplicarás en el lienzo aún en blanco de tu vida?",
-        "¿Sientes un impulso irrefrenable de liberarte de lo que te limita, de reinventarte y de abrazar una nueva versión de ti mismo? El Loco te invita a un viaje enigmático: ¿Te atreves a abandonar la comodidad de lo familiar, a crear una vida que refleje tu verdadero potencial? ¿Qué significado oculto tiene la transformación para ti, y cómo la integrarás en el relato aún por escribir de tu futuro?",
-        "¿Anhelas reconectar con la felicidad, la paz interior y el bienestar, dejando atrás las preocupaciones y el estrés? El Loco te recuerda un secreto olvidado: la importancia de cultivar la alegría, de disfrutar del presente y de crear un futuro donde la plenitud sea la constante. ¿Podrás soltar las riendas del control por un instante, sumergirte en la experiencia de la felicidad? ¿Qué significado profundo tiene la alegría para ti, y cómo la invocarás en tu vida?"
-      ],
+amor: [
+    "Tu ingenuidad en el amor te está cegando: alguien cercano murmura en tu contra, alimentando dudas y envidias. Si insistes en confiar ciegamente, corres el riesgo de verte atrapado en una relación donde la manipulación y la traición sean tu pan de cada día. ¿No percibes cómo las risas falsas a tus espaldas envenenan tu presente?",
+    "Sigues entregando tu corazón sin límites, y eso te convierte en presa fácil. Hay terceros que disfrutan viendo tu dolor y tu desilusión sentimental; se nutren de tu entrega excesiva. Si no logras cerrar la puerta, el ridículo y la humillación serán inevitables. ¿Cuánto más estás dispuesto a dejar que otros dicten el valor de tu amor?",
+    "El vértigo de lo inesperado en tu vida amorosa no es libertad, es caos. Cada paso irreflexivo que das abre la puerta a relaciones tóxicas, a amores pasajeros que solo buscan aprovecharse de ti. En tu inocencia, no ves que algunos se acercan solo para destruirte lentamente. Abandonarte al momento puede costarte lágrimas que tardarán en sanar.",
+    "Tus heridas del pasado no han cerrado, pero en lugar de sanar, se han convertido en un imán para personas dañinas. El Loco te advierte que, mientras sigas sin cortar esos lazos, atraerás engaños, chismes y amores que solo desean verte arruinado. ¿Estás dispuesto a repetir el ciclo de dolor una vez más?"
+  ],
+
+  dinero: [
+    "El dinero que crees que fluye hacia ti es observado con envidia. El Loco te advierte: las lenguas venenosas ya siembran rumores sobre tu prosperidad. Si confías en cualquiera, alguien aprovechará tu ingenuidad para desplumarte por completo. No estás rodeado de aliados, sino de oportunistas esperando tu caída.",
+    "Tu mentalidad confiada hacia la abundancia se ha convertido en tu debilidad. Otros perciben tu esperanza como estupidez, y están trazando el camino para verte endeudado y arruinado. El riesgo no es perder oportunidades, es ser manipulado hasta dejarte sin nada. ¿Dónde quedará tu dignidad cuando te quiten hasta el último recurso?",
+    "El salto hacia lo desconocido en el ámbito financiero no significa éxito, sino trampa. Estás rodeado de manos ansiosas que aguardan tu error para quedarse con lo que es tuyo. Cada nuevo paso mal calculado te acerca a la pérdida total. Si persistes, la miseria será tu compañera.",
+    "El pasado económico que no superaste actúa como una sombra que sigue marcándote. Y mientras no cierres esas deudas emocionales y materiales, seguirás cayendo en los mismos fraudes. Alguien cercano espera ansioso tu próximo error financiero para usarlo en tu contra, hundiéndote aún más."
+  ],
+
+  futuro: [
+    "El futuro que imaginas no es aventura, es abismo. El Loco te advierte que las voces que susurran a tus espaldas no quieren verte crecer; quieren verte caer. Si te lanzas sin precaución, otros celebrarán tu fracaso. El mañana, en caso de insistir en tu ingenuidad, será la prueba de quién realmente desea tu ruina.",
+    "Tus sueños son también la obsesión de quienes te envidian. Cada idea tuya es observada con odio y resentimiento, esperando el momento de sabotearla. Si no cortas con esas presencias oscuras a tu alrededor, el futuro te traerá traiciones que destruirán lo que más anhelas.",
+    "Tu necesidad de reinventarte será usada en tu contra. En lugar de libertad, encontrarás burlas, traiciones y puertas cerradas. Alguien cercano ya trabaja en proyectar una imagen distorsionada de ti. Si no enfrentas estas sombras, tu reputación quedará en ruinas.",
+    "Anhelas paz, pero lo que atraerás será tormenta. La falsa felicidad que otros te muestran es solo fachada, porque en secreto disfrutan de tus tropiezos. El futuro, si no aprendes a desconfiar, se cargará de engaños, soledades y una oscuridad que te consumirá lentamente."
+  ],
     },
   },
   {
     src: "/Carta1.webp",
     name: "El Mago",
     descriptions: {
-      amor: [
-        "¿Te ves a ti mismo como el arquitecto de tu destino amoroso, capaz de moldear tu realidad con el poder de tu intención? El Mago te desafía a explorar las profundidades de tu ser y a descubrir los 'hechizos' únicos que posees, aquellos que te permitirán atraer y manifestar el amor que verdaderamente deseas. ¿Estás dispuesto a experimentar con diferentes formas de expresión amorosa, a probar nuevas estrategias y a confiar en tu capacidad para crear la relación que siempre has soñado? ¿Qué tipo de magia estás dispuesto a conjurar para hacer realidad tus anhelos amorosos?",
-        "¿Reconoces la confianza como tu herramienta más poderosa en el juego del amor, una varita mágica capaz de abrir puertas y atraer a tu vida la conexión que anhelas? El Mago te invita a cultivar una profunda seguridad en ti mismo, a reconocer tu valor y a proyectar esa confianza al mundo. ¿Te atreves a liberarte de las inseguridades y a mostrar al mundo tu verdadero potencial de seducción? ¿Estás dispuesto a confiar en tu intuición y a seguir el llamado de tu corazón, incluso si el camino parece incierto? ¿Qué tan seguro estás de tu propio poder para atraer el amor?",
-        "¿Confías en la sabiduría de tus instintos, en esa voz interior que te guía hacia la felicidad amorosa? El Mago te anima a escuchar tu intuición, a prestar atención a las señales que te envía el universo y a seguir el camino que te dicta tu corazón. ¿Estás dispuesto a dejar de lado la lógica y a confiar en la sabiduría de tus emociones? ¿Te atreves a explorar nuevas formas de conexión y a abrirte a experiencias amorosas inesperadas? ¿Qué significa para ti seguir tu corazón en el amor?",
-        "¿Sientes que tu vida amorosa necesita un nuevo comienzo, una transformación profunda que te permita experimentar la plenitud y la felicidad? El Mago te revela que posees el poder de crear ese renacimiento, de transformar tu relación actual o de atraer una nueva conexión que te llene de alegría y satisfacción. ¿Estás dispuesto a dejar atrás el pasado y a construir un futuro amoroso basado en tus verdaderos deseos y necesidades? ¿Qué tipo de magia estás dispuesto a crear para transformar tu vida amorosa?"
-      ],
-      dinero: [
-        "¿Crees en tu capacidad para generar prosperidad, para crear abundancia en tu vida a través de tus habilidades y talentos? El Mago te reta a explorar tu potencial financiero, a descubrir las oportunidades que te rodean y a crear nuevas formas de generar ingresos. ¿Estás dispuesto a liberarte de las creencias limitantes sobre el dinero y a confiar en tu capacidad para alcanzar tus metas financieras? ¿Qué tipo de oportunidades estás dispuesto a crear para construir la vida próspera que deseas?",
-        "¿Estás dispuesto a tomar la iniciativa y a explorar nuevos caminos para aumentar tus ingresos, a salir de tu zona de confort y a aventurarte en territorios financieros inexplorados? El Mago te muestra que posees las herramientas y los recursos necesarios para alcanzar el éxito financiero, solo necesitas atreverte a usarlos. ¿Qué caminos inexplorados estás dispuesto a recorrer para alcanzar tus metas económicas? ¿Estás dispuesto a desarrollar nuevas habilidades y a adaptarte a los cambios del mercado?",
-        "¿Confías en tu fuerza interior para superar los obstáculos financieros que se presenten en tu camino? El Mago te recuerda que tu resiliencia y tu capacidad para adaptarte son tus mayores activos en el mundo de las finanzas. ¿Estás dispuesto a enfrentar tus miedos y a superar las creencias limitantes que te impiden alcanzar tus metas económicas? ¿Qué tipo de miedos estás dispuesto a vencer para construir un futuro financiero sólido?",
-        "¿Confías en tu capacidad para hacer que las cosas sucedan, para convertir tus ideas en realidad y para aprovechar cada oportunidad que se presente en tu camino? El Mago te anima a tomar acción, a ser proactivo y a no temer a los desafíos que puedan surgir. ¿Qué tan lejos estás dispuesto a llegar para alcanzar tus metas financieras? ¿Estás dispuesto a trabajar arduamente y a perseverar hasta alcanzar tus sueños?"
-      ],
-      futuro: [
-        "¿Te ves a ti mismo como un guía en tu propio camino, iluminando tu futuro con tu sabiduría y experiencia? El Mago te muestra que tu conocimiento y tus decisiones son valiosos para construir un futuro próspero. ¿Qué tipo de decisiones estás dispuesto a tomar? ¿Estás dispuesto a escuchar tu intuición y a confiar en tu propio juicio? Las cartas del tarot pueden revelar las respuestas que buscas...",
-        "¿Estás dispuesto a explorar nuevas formas de crecimiento personal, a crear experiencias únicas que fortalezcan tu desarrollo y a construir un futuro lleno de logros? El Mago te invita a ser creativo y a buscar actividades que fomenten tu aprendizaje y tu evolución. ¿Qué tipo de experiencias estás dispuesto a crear para fortalecer tu camino? ¿Estás dispuesto a salir de la rutina y a probar cosas nuevas? Un lector de tarot experto puede guiarte en este viaje de autodescubrimiento...",
-        "¿Confías en tu fortaleza interior para superar los desafíos que se presenten en el camino? El Mago te recuerda que tu resiliencia y tu capacidad para adaptarte son fundamentales para construir un futuro brillante. ¿Qué tipo de obstáculos estás dispuesto a enfrentar para alcanzar tus metas? ¿Estás dispuesto a trabajar en ti mismo y a buscar soluciones creativas? ¿Te atreves a descifrar los mensajes del Mago y a construir el futuro que deseas?",
-        "¿Anhelas crear un futuro lleno de paz, armonía y éxito, un espacio donde te sientas seguro, valorado y feliz? El Mago te revela que tu energía positiva y tu capacidad para crear un ambiente propicio son claves para lograrlo. ¿Qué tipo de armonía estás dispuesto a cultivar en tu vida? ¿Estás dispuesto a practicar la empatía, el respeto y la comunicación asertiva contigo mismo? Las cartas del tarot pueden mostrarte el camino hacia un futuro pleno...",
-      ],
+   amor: [
+    "Tu seguridad atrae envidias: alguien cercano busca romper tu relación con mentiras y celos.",
+    "El encanto que proyectas peligra, pues hay quien disfruta viéndote caer en desilusiones sentimentales.",
+    "No escuches ciegamente al corazón: a tu alrededor hay falsedad, disfraces y engaños.",
+    "Un nuevo amor podría convertirse en una trampa mortal donde solo absorban tu energía."
+  ],
+
+  dinero: [
+    "Tus ideas despiertan envidia: alguien espera el momento de robar lo que construyes.",
+    "Creer que tienes todo bajo control es ingenuidad: hay trampas financieras acechando.",
+    "Un falso socio te promete éxito, pero solo busca vaciar tus bolsillos.",
+    "Si no vigilas tu entorno, lo que ganes hoy será usado en tu contra mañana."
+  ],
+
+  futuro: [
+    "El rumbo que tomas no brilla, lo oscurecen voces a tus espaldas que desean tu fracaso.",
+    "Las oportunidades que surgen están manchadas: alguien te tiende una emboscada disfrazada de ayuda.",
+    "Si no cortas con esas presencias tóxicas, tu destino se convertirá en ruina y aislamiento.",
+    "Tu supuesto futuro de éxito puede convertirse en burla, porque otros ya envenenan tu camino."
+  ],
     },
   },
   {
@@ -83,96 +87,104 @@ export const cardData = [
     src: "/Carta3.webp",
     name: "La Emperatriz",
     descriptions: {
-      amor: [
-        "¿Sientes que tu relación amorosa se encuentra en un estado de florecimiento, donde la armonía y la estabilidad son las protagonistas? La Emperatriz te confirma que estás en un buen lugar, que la conexión emocional entre tú y tu pareja se fortalecerá, y que un período de intimidad y afecto renovado está en el horizonte. ¿Estás dispuesto a cultivar esta armonía, a nutrir la relación con amor y comprensión, y a crear un espacio donde ambos puedan crecer y prosperar juntos?",
-        "¿Sientes que una nueva etapa amorosa está comenzando, ya sea una relación incipiente o un renacimiento en tu conexión actual? La Emperatriz te anuncia que la energía amorosa está presente, vibrante y llena de posibilidades. ¿Estás dispuesto a abrir tu corazón a la pasión y el romance, a confiar en tu intuición y a seguir el camino que te dicta tu corazón en asuntos del amor? ¿Estás listo para dejarte llevar por la magia del amor y a construir una relación basada en la autenticidad y la conexión profunda?",
-        "¿Reconoces la importancia de cultivar el amor propio como base para construir relaciones saludables y satisfactorias? La Emperatriz te recuerda que antes de buscar el amor en otros, es fundamental amarte a ti mismo/a, trabajar en tu autoestima y cuidar tus propias necesidades emocionales. ¿Estás dispuesto a embarcarte en un viaje de autodescubrimiento y crecimiento personal, a reconocer tu valor y a construir una relación amorosa contigo mismo/a basada en el respeto y la aceptación? ¿Qué tipo de amor propio estás dispuesto a cultivar?",
-        "¿Sientes que te encuentras en un momento de autoexploración y descubrimiento personal en el ámbito amoroso, donde te cuestionas tus deseos y necesidades en una relación? La Emperatriz te invita a reflexionar sobre tus experiencias pasadas, a identificar patrones que ya no te sirven y a definir con claridad lo que realmente deseas en una conexión amorosa. ¿Estás dispuesto a tomar decisiones que te lleven hacia una relación más auténtica y significativa, a liberarte de las expectativas ajenas y a construir un futuro amoroso basado en tus propios valores y deseos?"
-      ],
-      dinero: [
-        "¿Confías en la sabiduría de tu intuición como una guía valiosa para tomar decisiones financieras informadas? La Emperatriz te recuerda la importancia de investigar a fondo cada situación, de analizar los datos con objetividad y de confiar en tu instinto para discernir las señales sutiles que te envía el universo. ¿Estás dispuesto a desarrollar tu capacidad de percepción, a prestar atención a las corazonadas y a confiar en tu juicio para tomar decisiones financieras inteligentes?",
-        "¿Mantienes una mente abierta y receptiva ante las oportunidades y riesgos financieros que se presentan en tu camino? La Emperatriz te aconseja prestar atención a las señales sutiles que podrían indicar tanto oportunidades de crecimiento como posibles obstáculos financieros. ¿Estás dispuesto a evaluar cuidadosamente cada situación, a considerar diferentes perspectivas y a tomar decisiones informadas y estratégicas?",
-        "¿Confías en tu capacidad para encontrar soluciones creativas a los desafíos financieros que puedan surgir en tu vida? La Emperatriz te recuerda que posees la inteligencia y la creatividad necesarias para superar cualquier obstáculo y alcanzar tus metas financieras. ¿Estás dispuesto a explorar nuevas ideas, a pensar fuera de la caja y a confiar en tu capacidad para encontrar soluciones innovadoras y efectivas?",
-        "¿Reconoces la importancia de la investigación profunda y la honestidad como pilares fundamentales para tomar decisiones financieras sólidas? La Emperatriz te guía hacia la búsqueda de la verdad, la transparencia y la objetividad en tus decisiones financieras, a buscar información crucial y a evitar los engaños y las falsas promesas. ¿Estás dispuesto a dedicar tiempo y esfuerzo a investigar a fondo cada oportunidad financiera, a analizar los datos con objetividad y a tomar decisiones basadas en información confiable?"
-      ],
-      futuro: [
-        "¿Consideras la comprensión y la empatía como herramientas fundamentales para abordar los desafíos y construir una armonía duradera en tu vida? La Emperatriz te invita a explorar la verdad oculta detrás de las situaciones, a escuchar con atención tus propias necesidades y sentimientos, y a crear un espacio seguro donde puedas expresarte con libertad y confianza. ¿Estás dispuesto a dejar de lado los prejuicios y a abrir tu corazón a la comprensión? Las cartas del tarot pueden revelar las respuestas que buscas...",
-        "¿Reconoces el poder de la calma y la receptividad emocional como bálsamos para el alma, capaces de sanar las heridas emocionales y de restaurar la paz interior? La Emperatriz te recuerda la importancia de mantener la calma y ser receptivo a tus propias necesidades emocionales, de ofrecerte apoyo y comprensión incondicional, y de crear un ambiente de tranquilidad y seguridad emocional en tu vida. ¿Estás dispuesto a cultivar la paciencia y la compasión contigo mismo? Un lector de tarot experto puede guiarte en este viaje de autodescubrimiento...",
-        "¿Confías en tu capacidad para abordar los problemas con comprensión y empatía, utilizando tu sabiduría interior como guía? La Emperatriz te anima a confiar en tu intuición, a escuchar la voz de tu corazón y a buscar soluciones pacíficas y creativas que te beneficien. ¿Estás dispuesto a mediar en tus propios conflictos internos con sabiduría y compasión, a fomentar el diálogo interno y la colaboración contigo mismo, y a construir un futuro basado en el respeto y la armonía interna? ¿Te atreves a descifrar los mensajes de la Emperatriz y a construir el futuro que deseas?",
-        "¿Consideras la comunicación abierta y honesta como un puente sólido hacia la paz interior, capaz de fortalecer los lazos contigo mismo y promover la armonía en tu vida? La Emperatriz te guía hacia la búsqueda de la verdad, la transparencia y la promoción de la comprensión contigo mismo. ¿Estás dispuesto a iniciar conversaciones honestas y profundas contigo mismo, a crear un espacio seguro donde puedas expresar tus opiniones y sentimientos con libertad y respeto, y a construir un futuro basado en la confianza y la comunicación efectiva contigo mismo? Las cartas del tarot pueden mostrarte el camino hacia la armonía interior...",
-      ],
+ amor: [
+    "Todo lo que crees que es estabilidad está siendo envenenado: alguien habla mal de ti ante tu pareja.",
+    "Esa nueva pasión que sientes puede ser solo un disfraz, alguien cercano busca ponerte en ridículo.",
+    "Tu falta de amor propio atrae a manipuladores que aprovecharán tus inseguridades.",
+    "La aparente calma es una ilusión: alguien juega contigo en silencio mientras esperas afecto verdadero."
+  ],
+
+  dinero: [
+    "Tus finanzas están expuestas a ojos envidiosos que esperan tu mínimo error.",
+    "Confías demasiado en promesas falsas; pronto te enfrentarás a un engaño financiero.",
+    "Tus ideas pueden ser robadas si descuidas a quién les hablas de tus proyectos.",
+    "La transparencia que ofreces será usada para manipularte y hundirte en pérdidas."
+  ],
+
+  futuro: [
+    "El futuro que sueñas se nubla: hay voces ocultas que conspiran contra ti.",
+    "La falsa calma que sientes es el cobijo de quienes desean verte fracasar.",
+    "Si sigues confiando en todos, tu destino quedará marcado por traiciones.",
+    "Tus deseos de paz serán saboteados por personas que siembran dudas y discordia."
+  ],
     },
   },
   {
     src: "/Carta4.webp",
     name: "El Emperador",
     descriptions: {
-      amor: [
-        "¿Sientes que la armonía se ha establecido como la reina indiscutible de tu relación, un estado de equilibrio y paz que te permite disfrutar de la estabilidad y la intimidad junto a tu pareja? El Emperador te invita a explorar las profundidades de esta conexión, a sumergirte en un océano de emociones compartidas y a construir un puente de entendimiento que trascienda lo superficial. ¿Estás dispuesto a abrir tu corazón a la vulnerabilidad, a compartir tus sueños y miedos más profundos, y a crear un espacio sagrado donde ambos puedan crecer y florecer juntos?",
-        "¿Sientes que una nueva etapa amorosa está a punto de comenzar, un renacimiento de la pasión y el romance que te invita a explorar nuevas experiencias y a redescubrir la magia del amor? El Emperador te anuncia la llegada de la aventura y la emoción, un torbellino de emociones que te invita a dejar atrás la rutina y a abrazar lo desconocido. ¿Estás dispuesto a abrirte a las sorpresas que el amor tiene preparadas para ti, a confiar en tu intuición y a seguir el camino que te dicta tu corazón, incluso si te lleva a lugares inexplorados?",
-        "¿Reconoces el amor propio como la base fundamental sobre la cual construir relaciones saludables y satisfactorias? El Emperador te recuerda que solo puedes dar aquello que posees en abundancia, que para amar a otros de manera auténtica y plena, primero debes amarte y aceptarte a ti mismo/a. ¿Estás dispuesto a embarcarte en un viaje de autodescubrimiento y crecimiento personal, a cultivar la autoestima y la confianza en ti mismo/a, y a construir una relación amorosa contigo mismo/a basada en el respeto y la aceptación incondicional?",
-        "¿Sientes que te encuentras en un momento de introspección y autodescubrimiento en el ámbito amoroso, donde te cuestionas tus deseos y necesidades en una relación? El Emperador te invita a reflexionar sobre tus experiencias pasadas, a identificar patrones que ya no te sirven y a definir con claridad lo que realmente deseas en una conexión amorosa. ¿Estás dispuesto a ser honesto/a contigo mismo/a, a enfrentar tus miedos y a tomar decisiones que te lleven hacia una relación más auténtica y significativa, basada en tus propios valores y deseos?"
-      ],
-      dinero: [
-        "¿Confías en la sabiduría de tu intuición como una guía valiosa para tomar decisiones financieras informadas? El Emperador te anima a confiar en tu instinto, a prestar atención a las señales sutiles que te envía el universo y a investigar a fondo cada situación antes de tomar una decisión. ¿Estás dispuesto a desarrollar tu capacidad de percepción, a analizar los datos con objetividad y a confiar en tu juicio para tomar decisiones financieras inteligentes?",
-        "¿Mantienes una mente abierta y receptiva ante las oportunidades y riesgos financieros que se presentan en tu camino? El Emperador te aconseja estar atento a las señales del universo, tanto positivas como negativas, a evaluar cuidadosamente cada situación y a considerar diferentes perspectivas antes de tomar una decisión. ¿Estás dispuesto a salir de tu zona de confort y a explorar nuevas formas de generar ingresos? ¿Qué tipo de riesgos y recompensas estás dispuesto a considerar?",
-        "¿Reconoces el poder de la creatividad como una llave maestra para desbloquear la prosperidad en tu vida financiera? El Emperador te revela que tus ideas innovadoras y originales pueden generar abundancia y abrirte puertas hacia nuevas oportunidades. ¿Estás dispuesto a explorar nuevas ideas, a pensar fuera de la caja y a confiar en tu capacidad para encontrar soluciones creativas y efectivas a tus desafíos financieros?",
-        "¿Consideras la verdad como la base sólida sobre la cual construir tu seguridad financiera? El Emperador te guía hacia la investigación profunda, la honestidad y la transparencia en tus decisiones financieras, a buscar información crucial y a evitar los engaños y las falsas promesas. ¿Estás dispuesto a dedicar tiempo y esfuerzo a investigar a fondo cada oportunidad financiera, a analizar los datos con objetividad y a tomar decisiones basadas en información confiable?"
-      ],
-      futuro: [
-        "¿Consideras la comprensión y la empatía como pilares fundamentales para construir una armonía duradera en tu vida? El Emperador te invita a explorar la verdad oculta detrás de las situaciones, a escuchar con atención tus propias necesidades y sentimientos, y a crear un espacio seguro donde puedas expresarte con libertad y confianza. ¿Estás dispuesto a dejar de lado los prejuicios y a abrir tu corazón a la comprensión? Las cartas del tarot pueden revelar las respuestas que buscas...",
-        "¿Reconoces el poder de la calma como un bálsamo para el alma, capaz de sanar las heridas emocionales y de restaurar la paz interior? El Emperador te recuerda la importancia de cultivar la receptividad emocional en tus relaciones contigo mismo, de prestar atención a tus propias necesidades y sentimientos, y de ofrecer apoyo y comprensión incondicional. ¿Estás dispuesto a crear un ambiente de tranquilidad y seguridad emocional en tu vida? ¿Qué tipo de necesidades emocionales estás dispuesto a atender? Un lector de tarot experto puede guiarte en este viaje de autodescubrimiento...",
-        "¿Confías en la sabiduría de tu intuición para resolver los conflictos con comprensión y empatía? El Emperador te anima a confiar en tu capacidad para abordar los problemas con sabiduría y compasión, a buscar soluciones pacíficas y creativas que te beneficien, y a actuar con justicia y equidad contigo mismo. ¿Estás dispuesto a mediar en tus propios conflictos internos con sabiduría y compasión? ¿Qué tipo de soluciones pacíficas estás dispuesto a encontrar? ¿Te atreves a descifrar los mensajes del Emperador y a construir el futuro que deseas?",
-        "¿Consideras la comunicación abierta y honesta como un puente sólido hacia la paz interior? El Emperador te guía hacia la búsqueda de la verdad, la transparencia y la promoción de la armonía contigo mismo, a crear un espacio seguro donde puedas expresar tus opiniones y sentimientos con libertad y respeto. ¿Estás dispuesto a iniciar conversaciones honestas y profundas contigo mismo? ¿Qué tipo de conversaciones honestas estás dispuesto a iniciar? Las cartas del tarot pueden mostrarte el camino hacia la armonía interior...",
-      ],
+     amor: [
+    "La aparente estabilidad de tu relación es frágil: alguien cercano siembra discordia para destruirla.",
+    "Esa nueva pasión no es magia, es un juego peligroso donde otros observan tu caída.",
+    "Tu falta de límites emocionales te expone a parejas que usarán tu amor como arma contra ti.",
+    "Aunque creas conocerte, alguien manipula tus miedos para mantenerte atado en vínculos vacíos."
+  ],
+
+  dinero: [
+    "Tu intuición falla: hay promesas financieras rodeadas de engaño y traición.",
+    "El riesgo que consideras oportunidad es en realidad una trampa tendida por manos envidiosas.",
+    "Tu creatividad llama la atención… pero hay quienes esperan robar tus ideas y hundirte.",
+    "La búsqueda de transparencia se vuelve peligrosa: alguien ya prepara fraudes disfrazados de ayuda."
+  ],
+
+  futuro: [
+    "El futuro que imaginas sereno es acechado por cuchicheos y traiciones a tus espaldas.",
+    "Tu aparente calma será usada para embriagarte de falsas promesas antes de arrebatarte todo.",
+    "Si sigues creyendo en todos, tu destino será manipulado, marcado por engaños y burlas.",
+    "Tu deseo de equilibrio será saboteado: quienes te rodean buscan sembrar caos en tu camino."
+  ],
     },
   },
   {
     src: "/Carta5.webp",
     name: "El Sacerdote",
     descriptions: {
-      amor: [
-        "¿Consideras la tradición como una guía valiosa en tu camino amoroso, un faro que ilumina el camino hacia relaciones sólidas y duraderas? El Sacerdote te invita a reflexionar sobre la estructura de tu relación, a buscar consejo en la sabiduría ancestral y a aprender de las experiencias de quienes te precedieron. ¿Estás dispuesto a honrar las tradiciones que resuenan contigo, a adaptarlas a tu realidad actual y a construir una relación basada en valores sólidos y compartidos? ¿Qué tan dispuesto estás a aprender de la sabiduría ancestral y a aplicarla a tu vida amorosa?",
-        "¿Reconoces la importancia de las raíces como base para construir una confianza inquebrantable en tu relación? El Sacerdote te sugiere volver a los valores tradicionales, a honrar tus promesas y a construir un compromiso sólido y duradero. ¿Estás dispuesto a cultivar la lealtad, la honestidad y el respeto mutuo en tu relación? ¿Qué tan dispuesto estás a honrar tus promesas y a construir un futuro juntos basado en la confianza y el compromiso?",
-        "¿Consideras la sabiduría como un antídoto poderoso contra la impulsividad en tus decisiones amorosas? El Sacerdote te anima a tomar decisiones informadas, a buscar conocimiento y a reflexionar sobre las consecuencias de tus acciones antes de actuar. ¿Estás dispuesto a investigar, a aprender de tus errores y a buscar consejo en personas sabias y experimentadas? ¿Qué tan dispuesto estás a investigar y aprender para tomar decisiones amorosas sabias y acertadas?",
-        "¿Reconoces la estabilidad como un pilar fundamental para construir una relación amorosa segura y duradera? El Sacerdote te recuerda la importancia de cultivar la confianza, la lealtad y el compromiso mutuo en tu relación. ¿Estás dispuesto a crear un espacio seguro donde ambos puedan crecer y florecer juntos? ¿Qué tan dispuesto estás a cultivar una relación segura y duradera basada en la confianza y la lealtad?"
-      ],
-      dinero: [
-        "¿Consideras la estrategia como una llave maestra para alcanzar el éxito financiero? El Sacerdote te impulsa a tomar la iniciativa, a planificar tus movimientos con inteligencia y a asumir el control de tus finanzas. ¿Estás dispuesto a establecer metas claras, a diseñar un plan estratégico y a tomar decisiones financieras informadas? ¿Qué tan dispuesto estás a asumir el control de tus finanzas y a construir un futuro financiero próspero?",
-        "¿Reconoces la innovación como un camino prometedor hacia la seguridad económica? El Sacerdote te anima a explorar nuevas ideas, a salir de tu zona de confort y a construir un futuro financiero sin límites. ¿Estás dispuesto a desarrollar tu creatividad, a buscar nuevas oportunidades y a adaptarte a los cambios del mercado? ¿Qué tan dispuesto estás a salir de tu zona de confort y a explorar nuevas formas de generar ingresos?",
-        "¿Consideras la disciplina como el motor que impulsa la prosperidad en tu vida financiera? El Sacerdote te aconseja establecer metas claras, a crear un presupuesto sólido y a avanzar con determinación hacia tus sueños financieros. ¿Estás dispuesto a trabajar arduamente, a ahorrar e invertir sabiamente y a mantener la disciplina en tus hábitos financieros? ¿Qué tan dispuesto estás a trabajar duro por tus sueños y a construir un futuro financiero sólido?",
-        "¿Reconoces la importancia de que cada movimiento financiero cuente, de construir una base sólida y sostenible para tu futuro económico? El Sacerdote te recuerda la importancia de la planificación a largo plazo, la diversificación de tus inversiones y la gestión responsable de tus recursos. ¿Estás dispuesto a construir un patrimonio sólido y a asegurar tu futuro financiero? ¿Qué tan dispuesto estás a construir una base financiera sólida y a tomar decisiones financieras responsables?"
-      ],
-      futuro: [
-        "¿Consideras que puedes transformar los retos en historias de resiliencia, utilizando tu sabiduría y liderazgo para guiarte hacia un futuro próspero? El Sacerdote te invita a asumir el rol de guía y a construir un futuro basado en el amor, el respeto y la colaboración contigo mismo. ¿Estás dispuesto a escuchar tus propias necesidades, a mediar en tus conflictos internos y a crear un ambiente de armonía y apoyo mutuo? ¿Qué tan dispuesto estás a guiarte hacia un futuro brillante? Las cartas del tarot pueden revelar las respuestas que buscas...",
-        "¿Estás dispuesto a crear nuevas tradiciones personales que fortalezcan tus lazos internos y construyan un legado duradero de amor y resiliencia? El Sacerdote te anima a honrar tu historia personal, a celebrar las tradiciones que te conectan con tu pasado y a crear nuevas costumbres que reflejen tus valores y sueños actuales. ¿Estás dispuesto a transmitir a tu futuro el amor y la sabiduría que has recibido? ¿Qué tan dispuesto estás a honrarte a ti mismo y a construir un legado personal significativo? Un lector de tarot experto puede guiarte en este viaje de autodescubrimiento...",
-        "¿Estás dispuesto a abrir las puertas a nuevas posibilidades personales, a abrazar el cambio y a renovar tu dinámica interna para adaptarla a los nuevos tiempos? El Sacerdote te sugiere dejar atrás las viejas costumbres que ya no funcionan, a explorar nuevas formas de comunicación y convivencia contigo mismo, y a construir un futuro basado en la flexibilidad y la adaptabilidad. ¿Estás dispuesto a escuchar tus propias opiniones y a tomar decisiones que te beneficien? ¿Qué tan dispuesto estás a adaptarte a los nuevos tiempos y a construir una vida feliz y unida contigo mismo? ¿Te atreves a descifrar los mensajes del Sacerdote y a construir el futuro que deseas?",
-        "¿Reconoces el amor y el respeto como la base fundamental para construir una convivencia interna armoniosa y duradera? El Sacerdote te recuerda la importancia de cultivar relaciones profundas y significativas contigo mismo, de practicar la empatía y la compasión, y de crear un ambiente de paz y armonía en tu interior. ¿Estás dispuesto a perdonar los errores del pasado, a expresar tu amor y gratitud, y a construir un futuro basado en el respeto y la comprensión mutua contigo mismo? ¿Qué tan dispuesto estás a cultivar la armonía interna y a construir relaciones profundas y significativas contigo mismo? Las cartas del tarot pueden mostrarte el camino hacia la armonía interior...",
-      ],
+amor: [
+    "Los Enamorados te anuncian decisiones importantes en el amor: escucha tu corazón y avanza con claridad.",
+    "Una nueva etapa amorosa puede florecer si confías en tu intuición y dejas atrás viejos miedos.",
+    "Tu indecisión está siendo aprovechada por terceros: alguien cercano busca dividirte y sembrar dudas en tu relación.",
+    "El verdadero amor nacerá de tu autenticidad, no de las máscaras que uses para agradar."
+  ],
+
+  dinero: [
+    "Los Enamorados te recuerdan que cada decisión económica marcará tu estabilidad futura.",
+    "Cuidado con falsas oportunidades financieras: alguien puede tenderte una trampa disfrazada de negocio.",
+    "El crecimiento económico llegará si confías en tu intuición al elegir aliados.",
+    "Tu abundancia depende de soltar las dudas y actuar con claridad en cada paso financiero."
+  ],
+
+  futuro: [
+    "Un futuro de unión y entendimiento se abre si aprendes a escucharte a ti mismo.",
+    "Si sigues confiando a ciegas, personas cercanas sabotearán tu camino y tu destino se llenará de traiciones.",
+    "El equilibrio entre razón y corazón será la clave de tu mañana.",
+    "La conexión contigo mismo marcará la diferencia y te abrirá un futuro más armonioso."
+  ],
     },
   },
   {
     src: "/Carta6.webp",
     name: "Los Enamorados",
     descriptions: {
-      amor: [
-        "¿Qué decisión te atormenta en el laberinto del amor, qué encrucijada te impide avanzar con claridad y confianza? Los Enamorados te invitan a silenciar el ruido de la mente y a escuchar la voz suave y persistente de tu corazón, esa brújula interna que te guía hacia la autenticidad y la plenitud. ¿Estás dispuesto a confiar en tu intuición, a seguir el camino que te dicta tu corazón, incluso si te lleva por senderos inexplorados y te desafía a salir de tu zona de confort?",
-        "¿Qué opciones te paralizan en el juego del amor, qué dilemas te impiden tomar decisiones y avanzar con seguridad? Los Enamorados te recuerdan que cada elección define tu destino amoroso, que cada paso que das moldea tu realidad y te acerca o aleja de la felicidad. ¿Estás dispuesto a elegir la paz y la armonía en tu relación, incluso si implica sacrificio, compromiso y la voluntad de dejar atrás viejos patrones y creencias limitantes?",
-        "¿Qué encrucijada emocional te desafía en el camino del amor, qué dudas y temores te impiden confiar en tus sentimientos y avanzar con seguridad? Los Enamorados te muestran que el camino hacia la felicidad a menudo está lleno de incertidumbre, que el amor verdadero exige valentía y la voluntad de enfrentar los desafíos con el corazón abierto. ¿Estás dispuesto a confiar en tu corazón, a seguir el camino que te dicta tu intuición, incluso cuando la duda y el miedo intentan desviarte de tu verdadero destino?",
-        "¿Qué deseos ocultos te impulsan en la búsqueda del amor, qué anhelos profundos te invitan a explorar las profundidades de tus sentimientos y a descubrir la verdad sobre ti mismo/a y tus relaciones? Los Enamorados te invitan a un viaje introspectivo, a explorar los recovecos de tu alma y a descubrir los tesoros que yacen en tu interior. ¿Estás dispuesto a elegir con el corazón, a seguir el camino que te dicta tu intuición, incluso si te lleva a lo desconocido y te desafía a abrazar la incertidumbre?"
-      ],
-      dinero: [
-        "¿Qué cambios te atemorizan en el ámbito financiero, qué transformaciones te impiden avanzar con seguridad y confianza? Los Enamorados te impulsan a abrazar la transformación, a convertir las lecciones aprendidas en éxito y a construir un futuro financiero próspero y abundante. ¿Estás dispuesto a arriesgarte por la prosperidad, a salir de tu zona de confort y a explorar nuevas oportunidades que te permitan alcanzar tus metas financieras?",
-        "¿Qué desafíos te desmotivan en el camino hacia la estabilidad económica, qué obstáculos te impiden alcanzar tus sueños y metas financieras? Los Enamorados te muestran que cada obstáculo esconde una oportunidad, que cada desafío te invita a crecer y a desarrollar tu potencial financiero. ¿Estás dispuesto a encontrar el potencial oculto en cada situación, a convertir los desafíos en triunfos y a construir un futuro financiero sólido y seguro?",
-        "¿Qué estructuras te limitan en el ámbito financiero, qué creencias y patrones te impiden alcanzar la libertad económica que deseas? Los Enamorados te invitan a construir bases sólidas para tus finanzas, a confiar en tu capacidad de crecimiento y a tomar el control de tu economía. ¿Estás dispuesto a liberarte de las limitaciones autoimpuestas, a construir un futuro financiero basado en tus propios valores y a alcanzar la libertad económica que mereces?",
-        "¿Qué visión te inspira en el camino hacia la abundancia, qué sueños y metas te motivan a construir un futuro financiero próspero y abundante? Los Enamorados te recuerdan que la libertad financiera se construye con claridad y determinación, que cada paso que das te acerca o aleja de tus sueños. ¿Estás dispuesto a moldear tu propio camino hacia la abundancia, a tomar decisiones financieras sabias y estratégicas, y a construir un futuro financiero basado en tus propios valores y sueños?"
-      ],
-      futuro: [
-        "¿Qué liderazgo te define en tu vida, qué tipo de guía estás dispuesto a ofrecerte a ti mismo para construir un futuro de unión y alegría? Los Enamorados te invitan a tomar las riendas de tu vida, a inspirarte con amor y sabiduría, y a construir un futuro basado en la colaboración y el apoyo mutuo contigo mismo. ¿Estás dispuesto a crear un ambiente interno donde puedas crecer y florecer plenamente? Las cartas del tarot pueden revelar las respuestas que buscas...",
-        "¿Qué soluciones te unen a ti mismo, qué estrategias estás dispuesto a implementar para construir un ambiente de armonía y comprensión interna? Los Enamorados te muestran que la armonía interna se construye con corazón y lógica, que el equilibrio entre el amor y la razón es fundamental para resolver tus conflictos internos y construir un futuro de paz y felicidad. ¿Estás dispuesto a crear un espacio seguro donde puedas expresar tus opiniones y sentimientos contigo mismo con libertad y respeto? Un lector de tarot experto puede guiarte en este viaje de autodescubrimiento...",
-        "¿Qué equilibrio te fortalece en tu rol de líder personal, qué tipo de guía estás dispuesto a ofrecerte a ti mismo para construir un futuro de amor y firmeza? Los Enamorados te recuerdan que la sabiduría reside en encontrar el punto medio entre el apoyo y la autoridad contigo mismo, que el equilibrio entre la flexibilidad y la disciplina es fundamental para construir una vida unida y resiliente. ¿Estás dispuesto a liderar con amor y firmeza contigo mismo, a establecer límites claros y a ofrecerte apoyo incondicional? ¿Te atreves a descifrar los mensajes de Los Enamorados y a construir el futuro que deseas?",
-        "¿Qué conexiones te nutren contigo mismo, qué tipo de relaciones estás dispuesto a cultivar internamente para construir un hogar de confianza y amor? Los Enamorados te invitan a valorar cada lazo emocional contigo mismo, a construir un espacio interno donde puedas florecer plenamente, y a cultivar un espacio de confianza y amor incondicional. ¿Estás dispuesto a invertir tiempo y energía en fortalecer tus relaciones internas, a expresarte amor y gratitud, y a construir un futuro basado en la conexión y el apoyo mutuo contigo mismo? Las cartas del tarot pueden mostrarte el camino hacia la armonía interior...",
-      ],
+       amor: [
+    "Un camino se abre ante ti: tus decisiones en el amor definirán tu felicidad, escucha tu corazón.",
+    "Tu indecisión alimenta chismes: alguien cercano busca sembrar discordia en tu relación.",
+    "El amor verdadero exige valentía, atrévete a confiar en tus sentimientos sin miedo.",
+    "Tus deseos más profundos te guiarán, pero solo si eres auténtico con lo que sientes."
+  ],
+
+  dinero: [
+    "No todas las oportunidades son reales: alguien puede tenderte una trampa financiera.",
+    "Cada obstáculo esconde una lección que puede fortalecer tu camino económico.",
+    "Tu libertad financiera llegará si rompes con creencias limitantes y tomas el control.",
+    "Decidir con claridad será la clave para acercarte a la estabilidad y la abundancia."
+  ],
+
+  futuro: [
+    "El verdadero liderazgo nacerá de elegir con el corazón y la mente en equilibrio.",
+    "Si confías ciegamente, tu futuro será saboteado por quienes te rodean en silencio.",
+    "Encontrar el balance entre disciplina y amor será la clave de tu mañana.",
+    "Un futuro armónico depende de fortalecer tus propios lazos internos con confianza."
+  ],
     },
   },
   {
@@ -180,23 +192,25 @@ export const cardData = [
     name: "El Carro",
     descriptions: {
       amor: [
-        "¿Te sientes a la deriva en tu vida amorosa, sin rumbo fijo ni control sobre tu destino? El Carro te recuerda que tienes el poder de tomar las riendas, de dirigir tu vida amorosa hacia la victoria y la felicidad. ¿Estás dispuesto a asumir la responsabilidad de tus decisiones, a definir tus metas amorosas y a avanzar con determinación hacia la relación que deseas? ¿Qué tan decidido estás a alcanzar la victoria en el amor, a superar los obstáculos y a construir una relación sólida y duradera?",
-        "¿Qué obstáculos te impiden avanzar en tu relación, qué desafíos te impiden alcanzar la armonía y la felicidad? El Carro te muestra que la perseverancia, el trabajo en equipo y la comunicación efectiva son claves para superar cualquier obstáculo emocional. ¿Estás dispuesto a luchar por la armonía en tu relación, a trabajar junto a tu pareja para superar los desafíos y a construir un futuro juntos basado en el amor y el respeto mutuo?",
-        "¿Qué tan lejos estás dispuesto a llegar por el amor, qué sacrificios estás dispuesto a hacer para alcanzar la felicidad en tu relación? El Carro te impulsa a superar los desafíos con determinación y esfuerzo, a no rendirte ante las dificultades y a luchar por el amor que deseas. ¿Estás dispuesto a tomar el control de tu vida amorosa, a avanzar con confianza hacia tus metas y a construir una relación basada en el amor, la confianza y el compromiso?",
-        "¿Qué destino amoroso te espera, qué tipo de relación deseas construir para tu futuro? El Carro te anima a confiar en tu capacidad para superar cualquier obstáculo, a creer en ti mismo/a y en tu pareja, y a avanzar con confianza hacia la felicidad. ¿Estás dispuesto a tomar el control de tu vida amorosa, a definir tus metas y a avanzar con determinación hacia la relación que deseas?"
-      ],
-      dinero: [
-        "¿Qué tan agudo es tu análisis financiero, qué tan capaz eres de analizar tus finanzas y tomar decisiones informadas? El Carro te recuerda que la reflexión, la planificación y la acción segura son claves para maximizar tus oportunidades financieras. ¿Estás dispuesto a tomar decisiones informadas, a analizar tus finanzas con cuidado y a buscar oportunidades que te permitan alcanzar tus metas económicas?",
-        "¿Qué equilibrio necesitas para alcanzar el éxito económico, qué tan capaz eres de equilibrar la disciplina y la creatividad en tus finanzas? El Carro te muestra que la disciplina y la creatividad son aliadas poderosas en el camino hacia la prosperidad. ¿Estás dispuesto a encontrar el punto medio entre la disciplina y la creatividad, a planificar tus finanzas con cuidado y a buscar soluciones innovadoras para alcanzar tus metas económicas?",
-        "¿Qué tan lejos estás dispuesto a llegar por la libertad económica, qué sacrificios estás dispuesto a hacer para alcanzar tus metas financieras? El Carro te recuerda que cada decisión cuenta, que cada paso que das te acerca o aleja de tus sueños financieros, y que una mentalidad positiva es esencial para alcanzar la prosperidad. ¿Estás dispuesto a construir tu futuro financiero con cada paso, a tomar decisiones informadas y a mantener una mentalidad positiva en el camino hacia la libertad económica?",
-        "¿Qué visión te impulsa a la prosperidad, qué sueños y metas te motivan a construir un futuro financiero próspero y abundante? El Carro te anima a planificar con determinación, a convertir tus metas en logros tangibles y a hacer de tus finanzas un reflejo de tus sueños. ¿Estás dispuesto a planificar tus finanzas con cuidado, a tomar decisiones informadas y a trabajar arduamente para alcanzar tus metas económicas?"
-      ],
-      futuro: [
-        "¿Qué significado buscas en tus relaciones, qué tipo de conexión deseas construir con los demás? El Carro te invita a escuchar activamente, a entender las necesidades y sentimientos de quienes te rodean, y a fortalecer los lazos con cada interacción. ¿Estás dispuesto a escuchar activamente a los demás, a entender sus necesidades y sentimientos, y a fortalecer los lazos con cada interacción? Las cartas del tarot pueden revelar las respuestas que buscas...",
-        "¿Qué puentes estás dispuesto a construir en tu vida, qué tipo de ambiente deseas crear para ti mismo? El Carro te muestra que tu perspectiva positiva y tu capacidad para resolver conflictos pueden transformar los desafíos en oportunidades de armonía y crecimiento personal. ¿Estás dispuesto a construir un ambiente de cercanía y comprensión contigo mismo, a crear un espacio donde te sientas seguro y amado? Un lector de tarot experto puede guiarte en este viaje de autodescubrimiento...",
-        "¿Qué tan honesta es tu comunicación contigo mismo y con los demás, qué tan capaz eres de comunicarte con claridad y empatía? El Carro te recuerda que la claridad, la honestidad y la empatía son esenciales para la unión con uno mismo y con los demás. ¿Estás dispuesto a ser un ejemplo de comunicación abierta y honesta, a escucharte con atención y a expresar tus sentimientos con claridad y respeto? ¿Te atreves a descifrar los mensajes del Carro y a construir el futuro que deseas?",
-        "¿Qué legado estás construyendo en tu vida, qué tipo de huella deseas dejar en el mundo? El Carro te anima a construir un espacio de amor, respeto y apoyo mutuo con cada pequeña acción, a crear un ambiente donde puedas crecer y florecer plenamente. ¿Estás dispuesto a marcar la diferencia a largo plazo, a construir un legado de amor y respeto para las futuras generaciones? Las cartas del tarot pueden mostrarte el camino hacia la armonía interior...",
-      ],
+    "El Carro te impulsa a tomar el control de tu vida amorosa y avanzar con decisión.",
+    "Superarás obstáculos si mantienes la comunicación y la confianza con tu pareja.",
+    "Tu relación puede ser víctima de celos y envidias: alguien cercano busca separarlos.",
+    "El amor florecerá si diriges tu energía hacia una meta clara y auténtica."
+  ],
+
+  dinero: [
+    "El éxito económico llegará si combinas disciplina y creatividad en tu planificación.",
+    "Un falso negocio podría atrapar tus finanzas si avanzas sin analizar los riesgos.",
+    "Cada paso seguro te acerca a la libertad financiera que deseas alcanzar.",
+    "Tus metas económicas se cumplirán si actúas con estrategia y determinación."
+  ],
+
+  futuro: [
+    "El futuro premia tu disciplina: con esfuerzo podrás consolidar tu camino.",
+    "Si confías demasiado, personas cercanas usarán tu ambición para hundirte.",
+    "Tu destino será claro si te mantienes honesto contigo mismo y con los demás.",
+    "Cada acción marcará tu legado; construye un futuro basado en respeto y decisión."
+  ],
     },
   },
   {
@@ -204,23 +218,25 @@ export const cardData = [
     name: "Justicia",
     descriptions: {
       amor: [
-        "¿Qué desafíos te esperan en el laberinto del amor, qué pruebas te invitan a demostrar tu valentía y compasión? La Justicia te invita a enfrentar los obstáculos con integridad, a luchar por la armonía y la estabilidad emocional en tu relación, y a construir un futuro amoroso basado en el respeto y la equidad. ¿Estás dispuesto a defender tus valores, a buscar el equilibrio en tu relación y a construir un amor justo y duradero?",
-        "¿Qué tan fuerte es tu autocontrol en el ámbito amoroso, qué tan capaz eres de dominar tus emociones y superar los obstáculos que se presentan en tu relación? La Justicia te recuerda que la resiliencia es clave para una relación duradera, que la capacidad de superar los desafíos con sabiduría y fortaleza es fundamental para construir un amor sólido y estable. ¿Estás dispuesto a cultivar la paciencia, la tolerancia y la comprensión en tu relación?",
-        "¿Qué poder reside en tu interior para transformar tu relación, qué tan capaz eres de utilizar tu fuerza interior para fortalecer los lazos emocionales con tu pareja? La Justicia te anima a transformar tu relación con valentía, a enfrentar los desafíos con honestidad y a construir un amor basado en la verdad y la transparencia. ¿Estás dispuesto a utilizar tu poder para crear una relación más auténtica y significativa?",
-        "¿Qué tan profundo es tu compromiso con el amor, qué tan dispuesto estás a enfrentar los desafíos con confianza y coraje para construir una conexión más significativa con tu pareja? La Justicia te invita a construir un amor basado en la confianza, el respeto y la equidad, a enfrentar los desafíos con valentía y a construir un futuro amoroso basado en la justicia y la armonía. ¿Estás dispuesto a comprometerte con la construcción de un amor verdadero y duradero?"
-      ],
-      dinero: [
-        "¿Qué oportunidades ocultas te esperan en el ámbito financiero, qué posibilidades te invitan a usar tu creatividad y perspicacia para alcanzar la prosperidad? La Justicia te invita a identificar las oportunidades que se presentan en tu camino, a analizar los datos con objetividad y a tomar decisiones financieras informadas y estratégicas. ¿Estás dispuesto a usar tu creatividad para alcanzar la prosperidad, a explorar nuevas ideas y a construir un futuro financiero próspero y abundante?",
-        "¿Qué decisiones financieras te impulsarán hacia la estabilidad y el éxito, qué prioridades necesitas reevaluar para construir una base sólida para tu futuro económico? La Justicia te anima a reevaluar tus prioridades financieras, a establecer metas claras y a construir una base sólida para tu futuro económico. ¿Estás dispuesto a asegurar tu estabilidad a largo plazo, a tomar decisiones financieras responsables y a construir un futuro financiero seguro y próspero?",
-        "¿Qué lecciones esconden tus desafíos financieros, qué oportunidades de aprendizaje te ofrecen los obstáculos que se presentan en tu camino hacia la estabilidad económica? La Justicia te recuerda que cada paso, cada decisión y cada desafío es una oportunidad de aprendizaje, que cada experiencia te invita a crecer y a desarrollar tu potencial financiero. ¿Estás dispuesto a convertir los obstáculos en peldaños hacia tus metas, a aprender de tus errores y a construir un futuro financiero basado en la sabiduría y la experiencia?",
-        "¿Qué visión tienes para tu futuro económico, qué tipo de vida deseas construir para ti y tus seres queridos? La Justicia te invita a adoptar una estrategia clara, a planificar tus finanzas con cuidado y a construir un camino hacia la abundancia. ¿Estás dispuesto a enfocar tu energía y persistir en tus objetivos, a trabajar arduamente y a tomar decisiones financieras sabias y estratégicas para alcanzar tus metas económicas?"
-      ],
-      futuro: [
-        "¿Qué tipo de líder eres en tu vida, qué tipo de guía estás dispuesto a ofrecerte a ti mismo para construir un futuro de amor y armonía? La Justicia te invita a guiar con amor y determinación, a ser un ejemplo de cambio positivo y a construir un futuro basado en la equidad y el respeto mutuo contigo mismo. ¿Estás dispuesto a liderar con integridad, a tomar decisiones justas y a construir un futuro basado en la paz y la armonía interna? Las cartas del tarot pueden revelar las respuestas que buscas...",
-        "¿Qué tan unido está tu mundo interno, qué tan capaz eres de reconocer la diversidad de tus propias perspectivas y de integrarlas? La Justicia te anima a reconocer la diversidad de opiniones y perspectivas dentro de ti, a construir una visión común que te beneficie y a fomentar la colaboración interna y el apoyo mutuo contigo mismo. ¿Estás dispuesto a construir una visión común para tu vida, a crear un espacio donde todas tus partes se sientan valoradas y respetadas? Un lector de tarot experto puede guiarte en este viaje de autodescubrimiento...",
-        "¿Qué desafíos emocionales enfrentas en tu camino, qué oportunidades de crecimiento te ofrecen los obstáculos que se presentan? La Justicia te recuerda que cada obstáculo es una oportunidad para crecer, que cada desafío te invita a fortalecer tu conexión contigo mismo y a construir un futuro basado en la resiliencia y la unidad interna. ¿Estás dispuesto a trabajar en ti mismo y fortalecer tu conexión interna, a superar los desafíos con sabiduría y compasión? ¿Te atreves a descifrar los mensajes de la Justicia y a construir el futuro que deseas?",
-        "¿Qué tipo de vida estás construyendo, qué tipo de ambiente deseas crear para ti mismo? La Justicia te invita a crear un espacio de confianza y apoyo mutuo contigo mismo, a construir un futuro de armonía y felicidad con cada acto de amor propio. ¿Estás dispuesto a cimentar un futuro de armonía y felicidad con cada acto de amor propio, a construir un espacio interno donde te sientas seguro, amado y valorado? Las cartas del tarot pueden mostrarte el camino hacia la armonía interior...",
-      ],
+    "Tu relación está siendo observada: alguien siembra dudas y busca romper tu estabilidad amorosa.",
+    "La Justicia revela engaños ocultos: si no enfrentas la verdad, caerás en vínculos falsos y tóxicos.",
+    "El equilibrio y la paciencia te permitirán superar los retos del amor.",
+    "Un amor justo y duradero nacerá de la confianza mutua y la transparencia."
+  ],
+
+  dinero: [
+    "Un mal cálculo financiero podría hundirte: alguien cercano espera tu error para sacar provecho.",
+    "Mentiras y promesas vacías amenazan tu economía: evita las falsas alianzas.",
+    "La disciplina y la planificación son tus aliados para construir abundancia.",
+    "Cada error financiero puede transformarse en aprendizaje para fortalecer tu futuro."
+  ],
+
+  futuro: [
+    "Si ignoras las señales, tu futuro se llenará de conflictos internos y traiciones externas.",
+    "La Justicia te advierte: rodeado de voces envidiosas, tu destino puede corromperse.",
+    "Guiarte con integridad abrirá un camino lleno de paz y equidad.",
+    "Un futuro más armonioso será posible si cultivas la verdad y la honestidad contigo mismo."
+  ],
     },
   },
   {
@@ -228,23 +244,37 @@ export const cardData = [
     name: "El Ermitaño",
     descriptions: {
       amor: [
-        "¿Te atreves a explorar las profundidades de tus emociones, a sumergirte en el océano de tus sentimientos y a descubrir las verdades ocultas que yacen en tu interior? El Ermitaño te invita a la introspección y la auto-reflexión, a tomarte un tiempo a solas para evaluar tus sentimientos y prioridades en el amor. ¿Estás dispuesto a dejar de lado las distracciones externas, a silenciar el ruido de la mente y a conectar con tu verdadero ser para construir relaciones más auténticas y significativas?",
-        "¿Cómo encuentras la paz interior en el amor, cómo cultivas la serenidad y la armonía en tus relaciones? El Ermitaño te recuerda la importancia de la claridad mental y la conexión contigo mismo, de entender tus necesidades y deseos emocionales para construir relaciones basadas en el respeto y la comprensión mutua. ¿Estás dispuesto a explorar tus emociones con honestidad, a comunicarte con claridad y a establecer límites saludables en tus relaciones?",
-        "¿Serás capaz de cultivar la paciencia en tu relación, de mantener la calma y la serenidad ante los desafíos y las dificultades? El Ermitaño te muestra que la autodisciplina es esencial para el crecimiento personal y la conexión emocional, que la capacidad de reflexionar sobre tu relación y tomar decisiones fundamentadas es fundamental para construir un amor duradero. ¿Estás dispuesto a cultivar la paciencia, la tolerancia y la comprensión en tu relación?",
-        "¿Dónde buscas las respuestas a tus inquietudes amorosas, qué tipo de guía estás dispuesto a seguir para encontrar la claridad emocional en tu vida amorosa? El Ermitaño te invita a encontrar la claridad emocional en la soledad, a sintonizar con tus verdaderos sentimientos y a establecer límites saludables en tus relaciones. ¿Estás dispuesto a escuchar la voz de tu intuición, a confiar en tu sabiduría interior y a construir relaciones basadas en la autenticidad y el respeto mutuo?"
-      ],
-      dinero: [
-        "¿Puedes superar las adversidades financieras con determinación, qué tan capaz eres de convertir los desafíos en oportunidades de crecimiento y prosperidad? El Ermitaño te recuerda que tu capacidad para adaptarte, aprender y crecer es la llave para desbloquear nuevas oportunidades financieras. ¿Estás dispuesto a confiar en ti mismo, a desarrollar tu potencial y a construir un futuro financiero próspero y abundante?",
-        "¿Cómo transformas los obstáculos en lecciones valiosas, cómo conviertes los desafíos financieros en oportunidades de aprendizaje y crecimiento? El Ermitaño te anima a mantener la calma, a analizar los datos con objetividad y a tomar decisiones desde la sabiduría y la lógica. ¿Estás dispuesto a aprender del pasado, a evitar repetir los mismos errores y a construir un futuro financiero basado en la experiencia y la sabiduría?",
-        "¿Estás preparado para reevaluar tus hábitos financieros, para analizar tus gastos e ingresos con objetividad y para buscar formas innovadoras de administrar tus recursos? El Ermitaño te invita a buscar formas innovadoras de administrar tus recursos, a realizar pequeños ajustes para obtener grandes resultados y a construir un futuro financiero basado en la eficiencia y la sostenibilidad. ¿Serás capaz de realizar pequeños ajustes para obtener grandes resultados y alcanzar tus metas financieras?",
-        "¿Cuál es la mentalidad de crecimiento que necesitas adoptar para alcanzar tus metas económicas, qué tipo de actitud te permitirá superar los desafíos y alcanzar la prosperidad? El Ermitaño te impulsa a asumir riesgos calculados, a perseguir tus metas económicas con determinación y a salir de tu zona de confort. ¿Estás dispuesto a desarrollar una mentalidad de crecimiento, a aprender de tus errores y a construir un futuro financiero basado en la resiliencia y la perseverancia?"
-      ],
-      futuro: [
-        "¿Quién ilumina tu camino en la incertidumbre, quién te guía hacia soluciones positivas y un futuro próspero? El Ermitaño te invita a liderar con empatía y visión, a escuchar tus propias necesidades y sentimientos, y a construir un futuro basado en el amor y la comprensión contigo mismo. ¿Estás dispuesto a guiarte hacia soluciones positivas, a crear un ambiente de armonía y apoyo mutuo dentro de ti? Las cartas del tarot pueden revelar las respuestas que buscas...",
-        "¿Cómo abrazas el cambio en tu vida, cómo conviertes los desafíos en oportunidades de crecimiento y fortalecimiento de tu conexión interna? El Ermitaño te muestra que el cambio es una oportunidad para fortalecer las bases de tu vida, para construir un futuro basado en la flexibilidad y la adaptabilidad. ¿Serás capaz de adaptarte a los nuevos tiempos, de superar los desafíos con sabiduría y compasión, y de construir una vida unida y resiliente contigo mismo? Un lector de tarot experto puede guiarte en este viaje de autodescubrimiento...",
-        "¿Valoras tu propio papel en tu vida, qué tan capaz eres de reconocer y valorar tus propios aportes a la construcción de una vida feliz y armoniosa? El Ermitaño te recuerda la importancia de reconocer y valorar tus propios aportes, de construir una conexión más profunda y significativa contigo mismo, y de crear un ambiente donde te sientas valorado y respetado. ¿Estás dispuesto a construir una conexión más profunda y significativa contigo mismo? ¿Te atreves a descifrar los mensajes del Ermitaño y a construir el futuro que deseas?",
-        "¿Puedes construir un espacio interno de amor y comprensión, qué tan capaz eres de crear un espacio donde la armonía sea el pilar de tu vida? El Ermitaño te invita a crear un espacio donde la armonía sea el pilar, a cultivar el cuidado y el respeto mutuo contigo mismo, y a construir un espacio interno donde te sientas seguro, amado y valorado. ¿Estás dispuesto a cultivar el cuidado y el respeto mutuo contigo mismo? Las cartas del tarot pueden mostrarte el camino hacia la armonía interior...",
-      ],
+    // ☠️ Negativa
+    "Tu aislamiento puede convertirse en soledad: alguien disfruta viéndote perder confianza en el amor.",
+    // ☠️ Negativa
+    "El silencio del Ermitaño te advierte: hay quienes aprovechan tu distancia emocional para manipularte.",
+    // ✅ Positiva corta
+    "Un tiempo a solas te traerá claridad para construir relaciones más auténticas.",
+    // ✅ Positiva corta
+    "La paciencia y la introspección serán tus mejores aliadas en el amor."
+  ],
+
+  dinero: [
+    // ☠️ Negativa
+    "Tus finanzas corren riesgo si actúas sin reflexión: alguien cercano puede engañarte con falsas promesas.",
+    // ☠️ Negativa
+    "El aislamiento financiero puede volverse ruina si no tomas acción: tus enemigos esperan tu descuido.",
+    // ✅ Positiva corta
+    "Cada error es una lección: tu sabiduría puede transformar los tropiezos en crecimiento.",
+    // ✅ Positiva corta
+    "La disciplina en tus hábitos financieros abrirá paso a la abundancia."
+  ],
+
+  futuro: [
+    // ☠️ Negativa
+    "El Ermitaño te advierte: si no escuchas tu interior, quedarás atrapado en la oscuridad de otros.",
+    // ☠️ Negativa
+    "Personas falsas podrían aprovechar tu búsqueda de calma para desviarte hacia la soledad y el estancamiento.",
+    // ✅ Positiva corta
+    "Un futuro sólido nacerá de la introspección y el respeto por tus propios ritmos.",
+    // ✅ Positiva corta
+    "Guiarte con autenticidad e integridad abrirá un mañana más pleno y armónico."
+  ],
     },
   },
   {
@@ -252,23 +282,25 @@ export const cardData = [
     name: "Rueda de la fortuna",
     descriptions: {
       amor: [
-        "¿Te encuentras listo para un cambio positivo y significativo en tu relación, para abrazar las nuevas oportunidades que el universo te ofrece en el amor? La Rueda de la Fortuna te sonríe, te invita a confiar en el destino y a aprovechar esta racha de buena suerte para construir un amor más pleno y satisfactorio. ¿Cómo te preparas para recibir las bendiciones que el universo tiene reservadas para ti en el amor?",
-        "¿Sientes la esperanza kármica en el amor, la certeza de que las semillas que has sembrado en el pasado están a punto de florecer en tu vida amorosa? ¿De qué manera te estás preparando para recibir las bendiciones que el universo tiene para ti, para abrir tu corazón a nuevas experiencias y para construir un amor basado en la confianza y el respeto mutuo?",
-        "¿Confías en los ciclos y fluctuaciones naturales de una relación, en la certeza de que el amor es un viaje lleno de altibajos, de momentos de alegría y de desafíos? ¿Cómo mantendrás la fe mientras el destino trabaja a tu favor, cómo cultivarás la paciencia y la sabiduría para superar los obstáculos y construir un amor duradero?",
-        "¿Estás abierto a nuevas oportunidades y experiencias en el amor, a dejarte sorprender por el destino y a construir un amor basado en la aventura y la exploración? ¿Cuál será tu actitud ante una conexión significativa o una mejora en tu relación actual, cómo te preparas para recibir las bendiciones que el universo tiene para ti en el amor?"
-      ],
-      dinero: [
-        "¿Cómo aplicas la sabiduría de tus experiencias financieras pasadas, qué lecciones has aprendido de tus éxitos y fracasos en el mundo de las finanzas? ¿Qué estrategias te ayudarán a avanzar con confianza hacia tus metas económicas, cómo construirás un futuro financiero basado en la experiencia y la sabiduría?",
-        "¿Te sientes preparado para una transformación económica, para dejar atrás los viejos patrones y construir un futuro financiero basado en la abundancia y la prosperidad? ¿De qué manera la persistencia y el aprendizaje continuo te guiarán hacia el éxito, cómo cultivarás la paciencia y la disciplina para alcanzar tus metas económicas?",
-        "¿Cultivas la paciencia y la claridad en tus decisiones financieras, qué tan capaz eres de mantener la calma y la objetividad en el mundo de las finanzas? ¿Cuál es la base sólida de conocimiento que te dará seguridad económica, cómo te preparas para tomar decisiones financieras informadas y estratégicas?",
-        "¿Estás dispuesto a explorar nuevas ideas y enfoques financieros, a salir de tu zona de confort y a construir un futuro económico basado en la innovación y la creatividad? ¿Cómo te abrirás a las oportunidades inesperadas que puedan surgir, cómo aprovecharás las nuevas tendencias y tecnologías para alcanzar tus metas financieras?"
-      ],
-      futuro: [
-        "¿Dedicas tiempo a reflexionar sobre tus dinámicas internas, qué tan consciente eres de tus patrones y relaciones internas? ¿Cómo puedes contribuir a tu bienestar con una visión clara, cómo construirás un futuro basado en la armonía y la colaboración contigo mismo? Las cartas del tarot pueden revelar las respuestas que buscas...",
-        "¿Construyes puentes emocionales contigo mismo, qué tan capaz eres de crear un ambiente de confianza y comunicación abierta contigo? ¿De qué manera la introspección te ayuda a entenderte mejor, cómo cultivarás la empatía y la compasión contigo mismo? Un lector de tarot experto puede guiarte en este viaje de autodescubrimiento...",
-        "¿Eres el primero en mostrar paciencia y comprensión contigo mismo, qué tan capaz eres de mantener la calma y la serenidad ante los desafíos y las dificultades? ¿Cómo influye tu ejemplo en tu propio florecimiento, cómo te inspirarás a construir un futuro basado en el amor y el respeto mutuo contigo mismo? ¿Te atreves a descifrar los mensajes del Ermitaño y a construir el futuro que deseas?",
-        "¿Valoras el poder del tiempo en soledad para recargar energías, qué tan importante es para ti cultivar la paz interior y la claridad mental? ¿De qué manera una perspectiva renovada y positiva te beneficia, cómo construirás un ambiente de armonía y bienestar para ti mismo? Las cartas del tarot pueden mostrarte el camino hacia la armonía interior...",
-      ],
+    "El destino puede girar en tu contra: una traición o un engaño amenaza tu relación.",
+    "Personas envidiosas buscan alterar tu estabilidad amorosa con rumores y desconfianza.",
+    "Un nuevo ciclo amoroso se abre, confía en los cambios y aprovecha la oportunidad.",
+    "La paciencia y la fe en los ciclos del destino fortalecerán tu relación."
+  ],
+
+  dinero: [
+    "Un giro brusco puede derrumbar tus finanzas: alguien espera tu error para aprovecharse.",
+    "La fortuna se vuelve inestable: advierte las falsas promesas que buscan arruinarte.",
+    "Los cambios traen oportunidades: con disciplina puedes alcanzar prosperidad.",
+    "Innovación y creatividad abrirán nuevas puertas para tu estabilidad económica."
+  ],
+
+  futuro: [
+    "La rueda puede hundirte si confías en todos: habrá quienes disfruten de tu caída.",
+    "Si no aprendes de tus errores, el destino repetirá las mismas pruebas una y otra vez.",
+    "Un giro inesperado traerá claridad y nuevas posibilidades para tu vida.",
+    "Aceptar el cambio con serenidad te conducirá hacia un mañana más armonioso."
+  ],
     },
   },
   {
