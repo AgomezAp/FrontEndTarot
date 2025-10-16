@@ -794,7 +794,22 @@ body {
   }
 
   .cards {
-    gap: 1vw;
+    display: flex;
+    flex-direction: row !important; /* Forzar dirección horizontal */
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 5px;
+    width: 100%;
+    overflow-x: auto; /* Permitir scroll horizontal si no caben */
+    margin-bottom: 10px;
+    transform: scaleX(-1); /* Mantener la transformación original */
+  }
+
+  .card-item {
+    flex: 0 0 auto;
+    width: auto;
+    min-width: 80px;
   }
 
   .description-header {
@@ -1025,25 +1040,7 @@ body {
     padding: clamp(12px, 2vh, 18px) clamp(25px, 5vw, 35px);
     font-size: clamp(13px, 2vh, 17px);
   }
-  .magical-cta {
-    /* Reemplazar la animación exagerada con una sutil */
-    animation: buttonGlowMobile 4s ease-in-out infinite;
-  }
 
-  /* Nueva animación sutil solo para móvil */
-  @keyframes buttonGlowMobile {
-    0%,
-    100% {
-      box-shadow: 0 8px 20px rgba(255, 165, 0, 0.4),
-        0 0 15px rgba(255, 215, 0, 0.3);
-      filter: brightness(1);
-    }
-    50% {
-      box-shadow: 0 10px 25px rgba(255, 165, 0, 0.5),
-        0 0 20px rgba(255, 215, 0, 0.4);
-      filter: brightness(1.1);
-    }
-  }
   .magical-cta:hover {
     transform: none; /* Sin transformación en móvil */
     animation: none; /* Detener animación en hover */
@@ -1529,4 +1526,53 @@ body {
     padding: 15px 30px;
     font-size: 16px;
   }
+}
+@media (max-width: 768px) {
+  .scrollable-description {
+    max-height: none !important; /* Quitar altura máxima fija */
+  }
+
+  .description-section {
+    max-height: none !important; /* Quitar altura máxima fija */
+    flex: 0 0 auto !important; /* Evitar que se expanda */
+  }
+
+  .card-description {
+    gap: 10px !important; /* Reducir espacio entre elementos */
+  }
+
+  .action-section {
+    margin-top: 15px !important; /* Espacio fijo arriba del botón */
+  }
+
+  /* Forzar contenedor azul a ajustarse al contenido */
+  .description-wrapper {
+    height: auto !important;
+  }
+}
+@media (max-width: 768px) {
+  .magical-cta {
+    animation: none !important; /* Asegurar que no tenga animación en móviles */
+    transform: none !important; /* Prevenir transformaciones */
+  }
+
+  /* Eliminar animación de hover/active en móvil */
+  .magical-cta:hover,
+  .magical-cta:active {
+    animation: none !important;
+    transform: none !important;
+    box-shadow: 0 8px 20px rgba(255, 165, 0, 0.4),
+      0 0 15px rgba(255, 215, 0, 0.3) !important;
+  }
+
+  /* Solo permitir un efecto sutil al pulsar */
+  .magical-cta:active {
+    transform: scale(0.98) !important;
+    transition: transform 0.1s ease !important;
+  }
+}
+
+/* Eliminar también animaciones en la clase button-icon */
+.button-icon {
+  animation: none !important;
 }

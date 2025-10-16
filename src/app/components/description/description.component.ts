@@ -418,7 +418,7 @@ export class DescriptionComponent implements OnInit, AfterViewInit, OnDestroy {
 
   // Método para obtener la posición de la carta
   getCardPosition(index: number): string {
-    const positions = ['Pasado', 'Presente', 'Futuro'];
+    const positions = ['Carta 3', 'Carta 2', 'Carta 1'];
     return positions[index] || '';
   }
 
