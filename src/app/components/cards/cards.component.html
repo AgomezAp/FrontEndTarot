@@ -106,6 +106,77 @@
         <div class="loading-spinner"></div>
         <p>Revelando tu destino...</p>
       </div>
+
+      <!-- Modal de Pago -->
+      <div class="payment-modal-overlay" *ngIf="showPaymentModal">
+        <div class="payment-modal">
+          <div class="payment-modal-header">
+            <div class="mystical-symbol">💎</div>
+            <h2 class="payment-title">¡Tu Lectura Especial Espera!</h2>
+            <div class="mystical-symbol">💎</div>
+          </div>
+          
+          <div class="payment-divider"></div>
+          
+          <div class="payment-content">
+            <p class="payment-message">
+              Ya disfrutaste tu primera lectura gratuita. Para revelar el mensaje 
+              de estas nuevas cartas, completa tu pago y descubre lo que el universo 
+              tiene preparado para ti.
+            </p>
+            
+            <div class="payment-price">
+              <span class="price-label">Lectura de Tarot</span>
+              <span class="price-amount">$15.000 COP</span>
+            </div>
+
+            <div class="payment-features">
+              <div class="feature-item">
+                <span class="feature-icon">✨</span>
+                <span>Interpretación detallada de tus cartas</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">🔮</span>
+                <span>Conexión con una maestra experta</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">⭐</span>
+                <span>Guía personalizada para tu camino</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment-actions">
+            <button 
+              class="payment-btn primary" 
+              (click)="goToPayment()"
+              [disabled]="isProcessingPayment || !paymentUrl">
+              <span *ngIf="isProcessingPayment" class="btn-loading">
+                <span class="spinner-small"></span>
+                Preparando pago...
+              </span>
+              <span *ngIf="!isProcessingPayment && paymentUrl">
+                <span class="btn-icon">💳</span>
+                Pagar con Mercado Pago
+              </span>
+              <span *ngIf="!isProcessingPayment && !paymentUrl">
+                <span class="spinner-small"></span>
+                Conectando...
+              </span>
+            </button>
+            
+            <button class="payment-btn secondary" (click)="closePaymentModal()">
+              <span class="btn-icon">↩️</span>
+              Volver a elegir cartas
+            </button>
+          </div>
+
+          <div class="payment-security">
+            <span class="security-icon">🔒</span>
+            <span>Pago seguro con Mercado Pago</span>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

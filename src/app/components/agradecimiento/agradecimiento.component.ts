@@ -2,6 +2,8 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { ParticlesComponent } from '../../shared/particles/particles.component';
+import { CardService } from '../../services/card.service';
+import { PaymentService } from '../../services/payment.service';
 import { gsap } from 'gsap';
 
 declare var anime: any; 
@@ -14,12 +16,19 @@ declare var anime: any;
 })
 export class AgradecimientoComponent {
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private cardService: CardService,
+    private paymentService: PaymentService
+  ) {}
   
 
   redirigir(): void {
-    // Limpiar datos y redirigir
-    localStorage.clear();
+    // Limpiar solo las cartas seleccionadas y el estado de pago de la sesión
+    // NO borrar el contador de tiradas para que el pago funcione
+    this.cardService.clearSelectedCards();
+    this.paymentService.clearPaidSession();
+    localStorage.removeItem('tema');
     this.router.navigate(['/']);
   }
 }
