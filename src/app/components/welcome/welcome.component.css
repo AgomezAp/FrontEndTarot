@@ -324,8 +324,8 @@ body {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #2c1810; /* Color dorado oscuro para contrastar con el fondo claro */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   font-family: "Cinzel", serif;
   letter-spacing: 1px;
   z-index: 10;

@@ -67,28 +67,14 @@
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
-        "mode": "bubble"
+        "enable": false
       },
       "onclick": {
-        "enable": true,
-        "mode": "repulse"
+        "enable": false
       },
       "resize": true
     },
-    "modes": {
-      "bubble": {
-        "distance": 100,
-        "size": 10,
-        "duration": 2,
-        "opacity": 0.8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 100,
-        "duration": 0.4
-      }
-    }
+    "modes": {}
   },
   "retina_detect": true
 }

@@ -53,7 +53,7 @@ export class AdditionalInfoComponent implements OnInit, AfterViewInit {
     private route: ActivatedRoute,
     private http: HttpClient,
     private datosService: DatosService,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
   ) {}
 
   ngOnInit(): void {
@@ -106,7 +106,7 @@ export class AdditionalInfoComponent implements OnInit, AfterViewInit {
           opacity: 0,
           ease: 'power3.out',
         },
-        '-=0.4'
+        '-=0.4',
       )
       .from(
         '.intro-text',
@@ -116,7 +116,7 @@ export class AdditionalInfoComponent implements OnInit, AfterViewInit {
           opacity: 0,
           ease: 'power3.out',
         },
-        '-=0.3'
+        '-=0.3',
       )
       .from(
         '.magical-input',
@@ -127,7 +127,7 @@ export class AdditionalInfoComponent implements OnInit, AfterViewInit {
           stagger: 0.1,
           ease: 'power3.out',
         },
-        '-=0.2'
+        '-=0.2',
       );
 
     // Animar el botón por separado para evitar errores
@@ -145,7 +145,7 @@ export class AdditionalInfoComponent implements OnInit, AfterViewInit {
 
   private setupInteractiveEffects(): void {
     const inputs = document.querySelectorAll(
-      '.mystical-input, .mystical-select'
+      '.mystical-input, .mystical-select',
     );
 
     inputs.forEach((input) => {
@@ -306,7 +306,7 @@ export class AdditionalInfoComponent implements OnInit, AfterViewInit {
       (error) => {
         console.error('Error al enviar los datos:', error);
         this.showErrorAnimation();
-      }
+      },
     );
 
     const cardDetails = this.recopila.map((card) => ({
@@ -316,7 +316,7 @@ export class AdditionalInfoComponent implements OnInit, AfterViewInit {
 
     const nombreCliente = this.nombreCliente;
     const numeroCliente = `${this.countryCode}${this.phone}`;
-    const numeroMaestro = '+573113519086';
+    const numeroMaestro = '+573006821133';
 
     const datosMod = {
       sessionId: '1234',
@@ -329,12 +329,12 @@ export class AdditionalInfoComponent implements OnInit, AfterViewInit {
       } (${numeroCliente}): Tema: ${this.tema}\n\n${cardDetails
         .map((card) => `Carta: ${card.name}, Descripción: ${card.description}`)
         .join(
-          '\n'
+          '\n',
         )}\n\nPonte en contacto con el cliente:\n\nhttps://wa.me/${numeroCliente}`,
     };
 
-    const url =
-      'https://gestor-de-mesajeria-via-whatsapp-g5hc.onrender.com/api/messages/CrearMensaje';
+    /*    const url = 'https://api.cartastarotcolombia.com/api/whatsapp/send-message'; */
+    const url = 'http://localhost:3010/api/whatsapp/send-message';
 
     this.http.post(url, datosMod).subscribe(
       (response) => {
@@ -347,7 +347,7 @@ export class AdditionalInfoComponent implements OnInit, AfterViewInit {
         this.hideLoader(); // 👉 ocultamos animación en caso de error
         this.showErrorAnimation();
         this.transitionToThankYou();
-      }
+      },
     );
   }
 
@@ -363,7 +363,7 @@ export class AdditionalInfoComponent implements OnInit, AfterViewInit {
 
     if (!this.termsAccepted) {
       this.showMagicalAlert(
-        'Debes aceptar los términos sagrados para continuar'
+        'Debes aceptar los términos sagrados para continuar',
       );
       return false;
     }
@@ -416,7 +416,7 @@ export class AdditionalInfoComponent implements OnInit, AfterViewInit {
         onComplete: () => {
           gsap.set('.magical-card', { x: 0 });
         },
-      }
+      },
     );
   }
 
@@ -576,7 +576,7 @@ export class AdditionalInfoComponent implements OnInit, AfterViewInit {
       gsap.fromTo(
         overlay,
         { opacity: 0 },
-        { opacity: 1, duration: 0.3, ease: 'power2.out' }
+        { opacity: 1, duration: 0.3, ease: 'power2.out' },
       );
     }
   }

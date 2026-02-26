@@ -17,7 +17,6 @@ import {
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { CardService } from '../../services/card.service';
-import { PaymentService } from '../../services/payment.service';
 import { ParticlesComponent } from '../../shared/particles/particles.component';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -42,7 +41,6 @@ export class DescriptionComponent implements OnInit, AfterViewInit, OnDestroy {
   countryCode: string = '';
   phone: string = '';
   nombreCliente: string = '';
-  isPaid: boolean = false;
   showPopupFlag: boolean = false;
   isLoading: boolean = false;
   private timeline: gsap.core.Timeline | null = null;
@@ -53,26 +51,12 @@ export class DescriptionComponent implements OnInit, AfterViewInit, OnDestroy {
     private router: Router,
     private route: ActivatedRoute,
     private http: HttpClient,
-    private cdr: ChangeDetectorRef,
-    private paymentService: PaymentService
+    private cdr: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
     this.isLoading = true;
-    
-    // Verificar si viene de un pago exitoso
-    this.route.queryParams.subscribe((queryParams) => {
-      if (queryParams['status'] === 'success') {
-        // Pago exitoso - marcar como pagado
-        this.paymentService.markAsPaid();
-        this.paymentService.incrementTiradas();
-      } else if (queryParams['status'] === 'failure') {
-        // Pago fallido - redirigir a bienvenida
-        this.router.navigate(['/bienvenida'], { queryParams: { status: 'failure' } });
-        return;
-      }
-    });
-    
+
     this.selectedCards = this.cardService.getSelectedCards();
 
     if (this.selectedCards.length === 0) {

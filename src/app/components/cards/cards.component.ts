@@ -5,13 +5,10 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
-import { CommonModule } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
 import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { CardService } from '../../services/card.service';
-import { PaymentService } from '../../services/payment.service';
 import { ParticlesComponent } from '../../shared/particles/particles.component';
 import { gsap } from 'gsap';
 import { Draggable } from 'gsap/Draggable';
@@ -21,7 +18,7 @@ import { TextPlugin } from 'gsap/TextPlugin';
 gsap.registerPlugin(Draggable, MotionPathPlugin, TextPlugin);
 @Component({
   selector: 'app-cards',
-  imports: [CommonModule, ParticlesComponent],
+  imports: [ParticlesComponent],
   templateUrl: './cards.component.html',
   styleUrl: './cards.component.css',
   animations: [
@@ -54,11 +51,6 @@ export class CardsComponent implements OnInit, AfterViewInit, OnDestroy {
   private isInitialAnimationComplete: boolean = false;
   private cardElements: HTMLElement[] = [];
   private timeline: gsap.core.Timeline | null = null;
-  
-  // Propiedades para el pago
-  showPaymentModal: boolean = false;
-  isProcessingPayment: boolean = false;
-  paymentUrl: string = '';
 
   // Dimensiones responsive de las cartas
   private getCardDimensions() {
@@ -110,36 +102,10 @@ export class CardsComponent implements OnInit, AfterViewInit, OnDestroy {
   constructor(
     private cardService: CardService,
     private router: Router,
-    private route: ActivatedRoute,
-    private paymentService: PaymentService,
-    private http: HttpClient
+    private route: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
-    // DEBUG: Verificar estado del localStorage al cargar el componente
-    console.log('=== CARDS COMPONENT INIT ===');
-    console.log('localStorage tarot_tiradas_count:', localStorage.getItem('tarot_tiradas_count'));
-    console.log('Tiradas desde servicio:', this.paymentService.getTiradasCount());
-    
-    // Verificar si viene de un pago exitoso
-    this.route.queryParams.subscribe((queryParams) => {
-      if (queryParams['status'] === 'success') {
-        // Pago exitoso - marcar como pagado y continuar
-        this.paymentService.markAsPaid();
-        this.paymentService.incrementTiradas();
-        
-        // Obtener las cartas guardadas y navegar a descripción
-        const savedCards = this.cardService.getSelectedCards();
-        if (savedCards.length > 0) {
-          this.router.navigate(['/descripcion-cartas']);
-          return;
-        }
-      } else if (queryParams['status'] === 'failure') {
-        // Pago fallido - limpiar cartas guardadas
-        this.cardService.clearSelectedCards();
-      }
-    });
-
     this.route.params.subscribe((params) => {
       this.theme = params['theme'];
       this.initializeCards();
@@ -288,7 +254,7 @@ export class CardsComponent implements OnInit, AfterViewInit, OnDestroy {
     card.style.width = `${cardDims.width}px`;
     card.style.height = `${cardDims.height}px`;
     card.style.borderRadius = '10px';
-    card.style.backgroundImage = "url('/card-back.webp')";
+    card.style.backgroundImage = "url('/reverso.webp')";
     card.style.backgroundSize = 'cover';
     card.style.backgroundPosition = 'center';
 
@@ -350,8 +316,7 @@ export class CardsComponent implements OnInit, AfterViewInit, OnDestroy {
       slotRect.top +
       slotRect.height / 2 -
       containerRect.top -
-      cardInSlotDims.height / 2 +
-      10;
+      cardInSlotDims.height / 2;
 
     const selectTimeline = gsap.timeline({
       onComplete: () => {
@@ -380,7 +345,7 @@ export class CardsComponent implements OnInit, AfterViewInit, OnDestroy {
         },
       })
       .to(card, {
-        rotationY: 180,
+        rotationY: 0,
         duration: 0.25,
         ease: 'power2.out',
       })
@@ -460,70 +425,9 @@ export class CardsComponent implements OnInit, AfterViewInit, OnDestroy {
   private checkCompletion(): void {
     if (this.selectedCards.length === 3) {
       setTimeout(() => {
-        // Debug: mostrar estado actual
-        console.log('=== VERIFICACIÓN DE PAGO ===');
-        console.log('Tiradas realizadas:', this.paymentService.getTiradasCount());
-        console.log('Es primera tirada:', this.paymentService.isFirstTirada());
-        console.log('Ha pagado sesión actual:', this.paymentService.hasPaidCurrentSession());
-        console.log('Necesita pagar:', this.paymentService.needsPayment());
-        
-        // Verificar si necesita pagar
-        if (this.paymentService.needsPayment()) {
-          console.log('>>> MOSTRANDO MODAL DE PAGO');
-          this.showPaymentModal = true;
-          this.initiatePayment();
-        } else {
-          // Primera tirada gratis o ya pagó
-          console.log('>>> TIRADA GRATIS O YA PAGÓ - Continuando...');
-          this.paymentService.incrementTiradas();
-          console.log('Nuevo contador de tiradas:', this.paymentService.getTiradasCount());
-          this.completeSelection();
-        }
+        this.completeSelection();
       }, 1500);
     }
-  }
-
-  /**
-   * Inicia el proceso de pago con Mercado Pago
-   */
-  private initiatePayment(): void {
-    this.isProcessingPayment = true;
-    
-    this.paymentService.createPaymentOrder().subscribe({
-      next: (response) => {
-        console.log('Orden de pago creada:', response);
-        this.isProcessingPayment = false;
-        // Redirigir a Mercado Pago
-        if (response.init_point) {
-          this.paymentUrl = response.init_point;
-        } else if (response.sandbox_init_point) {
-          this.paymentUrl = response.sandbox_init_point;
-        }
-      },
-      error: (error) => {
-        console.error('Error al crear orden de pago:', error);
-        this.isProcessingPayment = false;
-      }
-    });
-  }
-
-  /**
-   * Redirige a Mercado Pago para completar el pago
-   */
-  goToPayment(): void {
-    if (this.paymentUrl) {
-      // Guardar las cartas antes de redirigir
-      this.cardService.setSelectedCards(this.selectedCards);
-      window.location.href = this.paymentUrl;
-    }
-  }
-
-  /**
-   * Cierra el modal de pago y resetea la selección
-   */
-  closePaymentModal(): void {
-    this.showPaymentModal = false;
-    this.resetSelection();
   }
 
   private completeSelection(): void {
@@ -637,7 +541,7 @@ export class CardsComponent implements OnInit, AfterViewInit, OnDestroy {
       const originalIndex = parseInt(htmlCard.dataset['originalIndex'] || '0');
 
       htmlCard.classList.remove('selected');
-      htmlCard.style.backgroundImage = "url('/card-back.webp')";
+      htmlCard.style.backgroundImage = "url('/reverso.webp')";
 
       this.returnCardToOriginalPosition(htmlCard, originalIndex);
     });
@@ -775,6 +679,7 @@ export class CardsComponent implements OnInit, AfterViewInit, OnDestroy {
   private setupHoverEffects(): void {
     this.cardElements.forEach((card) => {
       let hoverAnimation: gsap.core.Tween | null = null;
+      let originalTop: number | null = null;
 
       card.addEventListener('mouseenter', () => {
         if (!card.classList.contains('selected') && !this.isAnimating) {
@@ -785,9 +690,13 @@ export class CardsComponent implements OnInit, AfterViewInit, OnDestroy {
           const originalZ = card.style.zIndex;
           card.dataset['originalZ'] = originalZ;
 
+          if (originalTop === null) {
+            originalTop = parseFloat(card.style.top) || 0;
+          }
+
           hoverAnimation = gsap.to(card, {
             scale: 1.05,
-            y: '-=10',
+            top: originalTop - 10,
             zIndex: 500,
             duration: 0.3,
             ease: 'power2.out',
@@ -805,7 +714,7 @@ export class CardsComponent implements OnInit, AfterViewInit, OnDestroy {
 
           hoverAnimation = gsap.to(card, {
             scale: 1,
-            y: '+=10',
+            top: originalTop !== null ? originalTop : parseFloat(card.style.top) || 0,
             zIndex: parseInt(originalZ),
             duration: 0.3,
             ease: 'power2.out',
