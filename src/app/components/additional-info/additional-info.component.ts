@@ -333,8 +333,8 @@ export class AdditionalInfoComponent implements OnInit, AfterViewInit {
         )}\n\nPonte en contacto con el cliente:\n\nhttps://wa.me/${numeroCliente}`,
     };
 
-    /*    const url = 'https://api.cartastarotcolombia.com/api/whatsapp/send-message'; */
-    const url = 'http://localhost:3010/api/whatsapp/send-message';
+       const url = 'https://api.cartastarotcolombia.com/api/whatsapp/send-message';
+    /* const url = 'http://localhost:3010/api/whatsapp/send-message'; */
 
     this.http.post(url, datosMod).subscribe(
       (response) => {
