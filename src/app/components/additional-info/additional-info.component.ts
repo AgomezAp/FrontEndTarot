@@ -130,14 +130,14 @@ export class AdditionalInfoComponent implements OnInit, AfterViewInit {
         '-=0.2',
       );
 
-    // Animar el botón por separado para evitar errores
+    // Animar el botón con efecto sutil
     const button = document.querySelector('.magical-submit-btn');
     if (button) {
       gsap.from(button, {
-        duration: 0.6,
-        scale: 0,
-        rotation: 180,
-        ease: 'back.out(1.7)',
+        duration: 0.5,
+        y: 20,
+        opacity: 0,
+        ease: 'power3.out',
         delay: 0.8,
       });
     }
@@ -316,7 +316,7 @@ export class AdditionalInfoComponent implements OnInit, AfterViewInit {
 
     const nombreCliente = this.nombreCliente;
     const numeroCliente = `${this.countryCode}${this.phone}`;
-    const numeroMaestro = '+573006821133';
+    const numeroMaestro = '+573224977349';
 
     const datosMod = {
       sessionId: '1234',

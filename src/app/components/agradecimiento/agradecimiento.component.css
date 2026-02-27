@@ -9,11 +9,20 @@
 html,
 body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
+  background-color: #0a0015;
+}
+
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0015;
 }
 
 /* Fondo simple pero elegante */
@@ -22,13 +31,15 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
+  width: 100dvw;
   height: 100vh;
-  background: linear-gradient(
-      135deg,
-      rgba(10, 0, 21, 0.8),
-      rgba(46, 7, 63, 0.6)
-    ),
-    url("/IMAGEN-ORIGEN-scaled-1.webp") center center/cover no-repeat;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  background:
+    linear-gradient(135deg, rgba(10, 0, 21, 0.8), rgba(46, 7, 63, 0.6)),
+    url("/IMAGEN-ORIGEN-scaled-1.webp") center center / cover no-repeat;
+  background-attachment: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,8 +53,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; /* Muy bajo */
-  pointer-events: none !important; /* IMPORTANTE: No bloquea clics */
+  z-index: 1;
+  pointer-events: none !important;
 }
 
 /* Contenedor principal con glassmorphism simple */
@@ -54,15 +65,18 @@ body {
     rgba(60, 40, 100, 0.8)
   );
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border: 2px solid rgba(255, 215, 0, 0.3);
   border-radius: 30px;
   padding: 50px 40px;
   width: 90%;
   max-width: 700px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 60px rgba(255, 215, 0, 0.1);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.5),
+    0 0 60px rgba(255, 215, 0, 0.1);
   text-align: center;
   position: relative;
-  z-index: 10; /* Por encima de las partículas */
+  z-index: 10;
 }
 
 /* Títulos elegantes y simples */
@@ -82,7 +96,7 @@ h1 {
 .button-container {
   margin-top: 40px;
   position: relative;
-  z-index: 12; /* Más alto que todo */
+  z-index: 12;
 }
 
 /* Botón elegante y optimizado */
@@ -102,8 +116,8 @@ h1 {
   box-shadow: 0 10px 30px rgba(255, 165, 0, 0.4);
   display: inline-block;
   position: relative;
-  z-index: 100; /* Z-index muy alto para asegurar interacción */
-  pointer-events: auto !important; /* Forzar que sea clickeable */
+  z-index: 100;
+  pointer-events: auto !important;
 }
 
 .call-to-action:hover {
@@ -121,10 +135,25 @@ h1 {
   outline-offset: 3px;
 }
 
-/* Responsive */
+/* ============================================
+   RESPONSIVE - TABLETS
+   ============================================ */
 @media (max-width: 768px) {
+  html,
+  body {
+    background-color: #0a0015;
+  }
+
+  .background {
+    background-attachment: scroll;
+    width: 100vw;
+    width: 100dvw;
+    height: 100vh;
+    height: 100dvh;
+  }
+
   .content-container {
-    width: 95%;
+    width: 92%;
     padding: 35px 25px;
   }
 
@@ -139,8 +168,17 @@ h1 {
   }
 }
 
+/* ============================================
+   RESPONSIVE - MÓVILES PEQUEÑOS
+   ============================================ */
 @media (max-width: 480px) {
+  .background {
+    background-attachment: scroll;
+    padding: 15px;
+  }
+
   .content-container {
+    width: 100%;
     padding: 25px 20px;
     border-radius: 20px;
   }
@@ -155,9 +193,65 @@ h1 {
   }
 }
 
-/* Para usuarios que prefieren menos movimiento */
+/* ============================================
+   LANDSCAPE ON PHONES
+   ============================================ */
+@media (max-height: 500px) and (orientation: landscape) {
+  .content-container {
+    padding: 20px 25px;
+  }
+
+  h1 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .button-container {
+    margin-top: 20px;
+  }
+
+  .call-to-action {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ============================================
+   SAFE AREA (notch devices)
+   ============================================ */
+@supports (padding-top: env(safe-area-inset-top)) {
+  .background {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
+/* ============================================
+   DARK MODE - MANTENER IMAGEN DE FONDO
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: #0a0015;
+  }
+
+  .background {
+    background:
+      linear-gradient(135deg, rgba(10, 0, 21, 0.8), rgba(46, 7, 63, 0.6)),
+      url("/IMAGEN-ORIGEN-scaled-1.webp") center center / cover no-repeat;
+    background-attachment: scroll;
+  }
+}
+
+/* ============================================
+   REDUCED MOTION (accesibilidad)
+   ============================================ */
 @media (prefers-reduced-motion: reduce) {
-  * {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.1s !important;

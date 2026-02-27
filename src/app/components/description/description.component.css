@@ -19,7 +19,7 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   overflow-x: hidden;
-  background: #f8f6f3;
+  background: #1a1a2e;
   color: #2c2c2c;
 }
 
@@ -31,14 +31,9 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   width: 100%;
-  background: linear-gradient(
-    160deg,
-    #fdfcfb 0%,
-    #f0ebe3 25%,
-    #e8e0d4 50%,
-    #f5f0e8 75%,
-    #fdfcfb 100%
-  );
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("/IMAGEN-ORIGEN-scaled-1.webp") no-repeat center center fixed;
+  background-size: cover;
   padding: 16px;
   padding-bottom: 40px;
   display: flex;
@@ -55,18 +50,13 @@ body {
   background:
     radial-gradient(
       ellipse at 20% 20%,
-      rgba(198, 169, 125, 0.08) 0%,
+      rgba(138, 100, 50, 0.1) 0%,
       transparent 50%
     ),
     radial-gradient(
       ellipse at 80% 80%,
-      rgba(167, 139, 97, 0.06) 0%,
+      rgba(100, 70, 30, 0.08) 0%,
       transparent 50%
-    ),
-    radial-gradient(
-      ellipse at 50% 50%,
-      rgba(210, 185, 145, 0.04) 0%,
-      transparent 70%
     );
   pointer-events: none;
   z-index: 0;
@@ -252,10 +242,10 @@ body {
 .main-title {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #3d3427;
+  color: #f5efe5;
   letter-spacing: 0.5px;
   margin-bottom: 12px;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   line-height: 1.2;
 }
 
@@ -276,7 +266,7 @@ body {
 
 .subtitle {
   font-size: 0.95rem;
-  color: #7a6e5d;
+  color: #c6a97d;
   font-weight: 400;
   letter-spacing: 0.3px;
   font-style: italic;
@@ -514,18 +504,18 @@ body {
 
 .magical-cta {
   position: relative;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   max-width: 360px;
+  margin: 0 auto;
   padding: 16px 24px;
   border: none;
   border-radius: 14px;
   cursor: pointer;
   overflow: hidden;
   background: transparent;
-  transition: transform 0.2s ease;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -536,37 +526,11 @@ body {
 .button-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    #c6a97d 0%,
-    #b09468 25%,
-    #a78b61 50%,
-    #b89e72 75%,
-    #c6a97d 100%
-  );
-  background-size: 200% 200%;
+  background: linear-gradient(135deg, #8b6914 0%, #6b4f10 50%, #8b6914 100%);
   border-radius: 14px;
-  animation: gradientShift 4s ease-in-out infinite;
   box-shadow:
-    0 4px 16px rgba(167, 139, 97, 0.3),
-    0 2px 6px rgba(167, 139, 97, 0.15);
-  transition: box-shadow 0.3s ease;
-}
-
-@keyframes gradientShift {
-  0%,
-  100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-.magical-cta:active .button-bg {
-  box-shadow:
-    0 2px 8px rgba(167, 139, 97, 0.25),
-    0 1px 3px rgba(167, 139, 97, 0.1);
+    0 4px 16px rgba(100, 70, 10, 0.4),
+    0 2px 6px rgba(100, 70, 10, 0.2);
 }
 
 .button-content {
@@ -580,23 +544,6 @@ body {
 
 .button-icon {
   font-size: 1.1rem;
-  animation: sparkle 2s ease-in-out infinite;
-}
-
-.button-icon:last-child {
-  animation-delay: -1s;
-}
-
-@keyframes sparkle {
-  0%,
-  100% {
-    opacity: 0.8;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
 }
 
 .button-text {
@@ -610,7 +557,7 @@ body {
 .cta-subtitle {
   margin-top: 10px;
   font-size: 0.8rem;
-  color: #9a8c7a;
+  color: #d4c4a8;
   font-weight: 400;
   letter-spacing: 0.2px;
 }
@@ -624,7 +571,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(248, 246, 243, 0.92);
+  background: rgba(10, 10, 20, 0.92);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   display: flex;
@@ -656,7 +603,7 @@ body {
 
 .loading-content p {
   font-size: 1rem;
-  color: #5a5044;
+  color: #e0d5c5;
   font-weight: 500;
   letter-spacing: 0.3px;
   animation: loadingPulse 1.5s ease-in-out infinite;
@@ -676,9 +623,7 @@ body {
    RESPONSIVE - SMALL PHONES (< 360px)
    ============================================ */
 @media screen and (max-width: 359px) {
-  .background {
-    padding: 12px;
-  }
+
 
   .main-title {
     font-size: 1.45rem;
@@ -718,10 +663,6 @@ body {
    RESPONSIVE - STANDARD PHONES (360px - 480px)
    ============================================ */
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .cards {
-    gap: 10px;
-    padding: 8px 8px;
-  }
 
   .card-item {
     max-width: 120px;
@@ -736,9 +677,6 @@ body {
    RESPONSIVE - LARGE PHONES (481px - 640px)
    ============================================ */
 @media screen and (min-width: 481px) and (max-width: 640px) {
-  .background {
-    padding: 20px;
-  }
 
   .main-title {
     font-size: 1.9rem;
@@ -765,14 +703,8 @@ body {
    RESPONSIVE - TABLETS (641px - 1024px)
    ============================================ */
 @media screen and (min-width: 641px) {
-  .background {
-    padding: 32px 24px;
-  }
 
-  .cards-container {
-    max-width: 580px;
-  }
-
+ 
   .main-title {
     font-size: 2.1rem;
   }
@@ -825,12 +757,6 @@ body {
     padding: 18px 28px;
   }
 
-  .magical-cta:hover .button-bg {
-    box-shadow:
-      0 8px 28px rgba(167, 139, 97, 0.35),
-      0 4px 12px rgba(167, 139, 97, 0.2);
-  }
-
   .button-text {
     font-size: 1.1rem;
   }
@@ -865,10 +791,7 @@ body {
    LANDSCAPE ORIENTATION ON PHONES
    ============================================ */
 @media screen and (max-height: 500px) and (orientation: landscape) {
-  .background {
-    padding: 8px 16px;
-    padding-bottom: 24px;
-  }
+
 
   .revelation-header {
     padding: 12px 16px 8px;
@@ -930,22 +853,10 @@ body {
 }
 
 /* ============================================
-   DARK MODE OVERRIDE (forzar tema claro)
+   DARK MODE OVERRIDE
    ============================================ */
 @media (prefers-color-scheme: dark) {
   body {
-    background: #f8f6f3;
-    color: #2c2c2c;
-  }
-
-  .background {
-    background: linear-gradient(
-      160deg,
-      #fdfcfb 0%,
-      #f0ebe3 25%,
-      #e8e0d4 50%,
-      #f5f0e8 75%,
-      #fdfcfb 100%
-    );
+    background: #1a1a2e;
   }
 }

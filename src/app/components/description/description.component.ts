@@ -261,30 +261,7 @@ export class DescriptionComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   private animateCTA(): void {
-    const ctaButton = document.querySelector('.magical-cta');
     const ctaSubtitle = document.querySelector('.cta-subtitle');
-
-    if (ctaButton) {
-      gsap.from(ctaButton, {
-        duration: 1,
-        scale: 0,
-        opacity: 0,
-        delay: 2.5,
-        ease: 'elastic.out(1, 0.5)',
-      });
-
-      // Efecto de respiración en el botón
-      const breathAnimation = gsap.to(ctaButton, {
-        scale: 1.05,
-        duration: 2,
-        repeat: -1,
-        yoyo: true,
-        ease: 'power1.inOut',
-        delay: 3.5,
-      });
-
-      this.animations.push(breathAnimation);
-    }
 
     if (ctaSubtitle) {
       gsap.from(ctaSubtitle, {
@@ -654,18 +631,6 @@ export class DescriptionComponent implements OnInit, AfterViewInit, OnDestroy {
         ease: 'power2.out',
       },
       '-=0.3'
-    );
-
-    // Animación del botón CTA
-    masterTimeline.from(
-      '.magical-cta',
-      {
-        duration: 0.6,
-        scale: 0,
-        rotation: 360,
-        ease: 'elastic.out(1, 0.5)',
-      },
-      '-=0.2'
     );
   }
 
